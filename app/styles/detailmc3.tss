@@ -1,0 +1,204 @@
+
+".container" : {
+  backgroundColor : 'white'
+},
+"#scrollId":{
+	height :'100%',
+	width : '100%',
+	layout : 'vertical'
+},
+"#label1":{
+	color:"black",
+	shadowColor:"#aaa",
+	text:"The Unit has not misted in the last 48 hours", 
+	backgroundColor : '#ADD8E6',
+	left : '10dp',
+	right : '10dp',
+	textAlign:Ti.UI.TEXT_ALIGNMENT_LEFT,
+	top:'30dp', 
+	width:Ti.UI.SIZE, 
+	height:Ti.UI.SIZE 
+},
+"#label2":{
+	color:"black",
+	shadowColor:"#aaa",
+	text:"The gateway has lost communication with Misting System", 
+	backgroundColor : '#F08080',
+	left : '10dp',
+	right : '10dp',
+	textAlign:Ti.UI.TEXT_ALIGNMENT_LEFT,
+	top:'0dp', 
+	width:Ti.UI.SIZE, 
+	height:Ti.UI.SIZE 
+},
+"#addressView":{
+	layout : 'horizontal',
+	width : '100%',
+	height : '80dp',
+	//backgroundColor : 'pink'
+},
+"#imageAdd":{
+	top : '20dp',
+	image : '/appicon.png',
+	width : '30dp',
+	height : '30dp',
+	left :'30dp'
+},
+"#sideView":{
+	left : '5dp',
+	top : '15dp',
+	layout : 'vertical',
+	height : Ti.UI.SIZE
+},
+"#commonClass":{
+	color:"black",
+	left : '10dp', 
+	width:Ti.UI.SIZE, 
+	height:Ti.UI.SIZE 
+},
+"#address1":{
+	text:"MistAway", 
+	font :{
+		fontWeight : 'bold',
+		fontSize : '12sp'
+	}
+},
+"#address2":{
+	text:"2121 brittmore Rd", 
+	font :{
+		fontSize : '9sp'
+	}
+},
+"#address3":{
+	text:"Houstan, TX 77043", 
+	font :{
+		fontSize : '9sp'
+	}
+},
+"#sample":{
+	top : '0dp',
+	height : Ti.UI.SIZE,
+	seperatorColor : 'transparent',
+	left : '20dp',
+	right : '20dp'
+},
+"#mistView":{
+	height : '30dp',
+	backgroundColor : '#ccc',
+	left : '20dp',
+	right : '20dp'
+},
+"#mistLbl":{
+	text:"Mist", 
+	color : '#576996',
+	font : {
+		fontSize : '15sp',
+		fontWeight : 'bold'
+	},
+	textAlign : Ti.UI.TEXT_ALIGNMENT_CENTER
+},
+"#stopView":{
+	height : Ti.UI.SIZE,
+	layout : 'Horizontal'
+},
+"#stopVieww":{
+	height : '30dp',
+	backgroundColor : '#ccc',
+	left : '20dp',
+	width : '140dp'
+	//right : '20dp'
+},
+"#stopLbl":{
+	text:"Stop", 
+	color : '#576996',
+	font : {
+		fontSize : '15sp',
+		fontWeight : 'bold'
+	},
+	textAlign : Ti.UI.TEXT_ALIGNMENT_CENTER
+},
+"#skipView":{
+	height : '30dp',
+	backgroundColor : '#ccc',
+	left : '0dp',
+	width : '140dp'
+	//right : '20dp'
+},
+"#skipLbl":{
+	text:"Skip", 
+	color : '#576996',
+	font : {
+		fontSize : '15sp',
+		fontWeight : 'bold'
+	},
+	textAlign : Ti.UI.TEXT_ALIGNMENT_CENTER
+},
+".lineViewRight":{
+	height : '100%',
+	width : '1%',
+	backgroundColor : 'black',
+	right : '0dp'
+},
+".lineViewLeft":{
+	height : '100%',
+	width : '1%',
+	backgroundColor : 'black',
+	left : '0dp'
+},
+"#clearChargeView":{
+	height : Ti.UI.SIZE,
+	layout : 'Horizontal'
+},
+"#clearError":{
+	height : '30dp',
+	backgroundColor : '#ccc',
+	left : '20dp',
+	width : '140dp'
+	//right : '20dp'
+},
+"#clearLbl":{
+	text:"CLEAR ERROR", 
+	color : '#576996',
+	font : {
+		fontSize : '15sp',
+		fontWeight : 'bold'
+	},
+	textAlign : Ti.UI.TEXT_ALIGNMENT_CENTER
+},
+"#chargeView":{
+	height : '30dp',
+	backgroundColor : '#ccc',
+	left : '0dp',
+	width : '140dp'
+	//right : '20dp'
+},
+"#chargeLbl":{
+	text:"CHARGE", 
+	color : '#576996',
+	font : {
+		fontSize : '15sp',
+		fontWeight : 'bold'
+	},
+	textAlign : Ti.UI.TEXT_ALIGNMENT_CENTER
+},
+"#inspectView":{
+	height : '30dp',
+	backgroundColor : '#ccc',
+	left : '20dp',
+	right : '20dp'
+},
+"#inspectLbl":{
+	text:"INSPECT", 
+	color : '#576996',
+	font : {
+		fontSize : '15sp',
+		fontWeight : 'bold'
+	},
+	textAlign : Ti.UI.TEXT_ALIGNMENT_CENTER
+},
+".line":{
+	height : '1dp',
+	backgroundColor : 'black',
+	left : '20dp',
+	right : '20dp'
+}

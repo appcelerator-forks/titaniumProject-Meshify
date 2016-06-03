@@ -1,0 +1,6 @@
+<Alloy>
+	<View id="mapViews" >
+		<!-- <Require src="addAddress" id="addAddress" /> -->
+		<Require src="map" id="map" />
+	</View>
+</Alloy>

@@ -1,0 +1,1339 @@
+"#wrapper": {
+	width: Ti.UI.FILL,
+	height: Ti.UI.FILL,
+	backgroundColor: "black"
+},
+"#table": {
+	width: Ti.UI.FILL,
+	height: Ti.UI.FILL,
+	backgroundColor: "black"
+},
+"#ptr3": {},
+"#MAScrollView": {
+	width: Ti.UI.FILL,
+	height: Ti.UI.FILL,
+	backgroundColor: "black"
+},
+"#MAScrollView[platform=ios]": {
+	showPagingControl: true
+},
+"#page1": {
+	width: Ti.UI.FILL,
+	height: Ti.UI.FILL,
+	backgroundImage: "/images/mistaway/background2.jpg"
+},
+"#headerView":{
+	top: "0dp",
+	width: Ti.UI.FILL,
+	height: "60dp"
+},
+"#vanityName":{
+	top: '2dp',
+	width: Ti.UI.SIZE,
+	color: 'white',
+	font: {
+		fontFamily: 'BebasNeue',
+		fontSize: '26sp',
+		fontWeight: 'bold'
+	},
+	minimumFontSize: '12sp',
+	horizontalWrap: false,
+	textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER,
+	wordWrap: false
+},
+"#ownerName":{
+	color : 'white',
+	font : {
+		fontFamily : 'BebasNeue',
+		fontSize : '18sp',
+		fontWeight : 'bold'
+	},
+	minimumFontSize:'12sp',
+	horizontalWrap : false,
+	textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER,
+	wordWrap : false,
+	top : '32dp',
+	width : Ti.UI.SIZE
+},
+"#leftRemote":{
+	top: "35dp",
+	left: "0dp",
+	width: Alloy.CFG.halfWidth,
+	height: Ti.UI.SIZE,
+	layout: 'vertical'
+},
+"#remoteLabel":{
+	top: "0dp",
+	text: "",
+	color: 'white',
+	font: {
+		fontFamily: 'BebasNeue',
+		fontSize: '16sp',
+		fontWeight: 'bold'
+	}
+},
+"#mistComponent": {
+	top: '5dp',
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE
+},
+"#mistWrapper": {
+	top: '20dp',
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE,
+	layout: 'horizontal'
+},
+"#mistImage":{
+	left: "10dp",
+	width: "25dp",
+	height: "20dp",
+	backgroundImage: "/images/mistaway/mist.png"
+},
+"#mistLabel":{
+	left: '10dp',
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE,
+	color: "white",
+	text: "MIST",
+	font: {
+		fontFamily: 'BebasNeue',
+		fontSize: '20sp',
+		fontWeight: 'bold'
+	},
+	textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER
+},
+"#mist":{
+	top: "0dp",
+	width: "140dp",
+	height: "60dp",
+	text: ' ',
+	opacity: "0.4",
+	backgroundColor: "#F0F8FF",
+	borderRadius: 8
+},
+"#stopComponent": {
+	top: '5dp',
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE
+},
+"#stopWrapper": {
+	top: '20dp',
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE,
+	layout: 'horizontal'
+},
+"#stopImage":{
+	left: "10dp",
+	width: "25dp",
+	height: "25dp",
+	backgroundImage: "/images/mistaway/stop.png"
+},
+"#stopLabel":{
+	left: "10dp",
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE,
+	text: "STOP",
+	color: "white",
+	font: {
+		fontFamily: 'BebasNeue',
+		fontSize: '20sp',
+		fontWeight: 'bold'
+	},
+	textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER
+},
+"#stop":{
+	top: "0dp",
+	width: "140dp",
+	height: "60dp",
+	text: ' ',
+	opacity: "0.4",
+	backgroundColor: "#F0F8FF",
+	borderRadius: 8
+},
+"#skipComponent": {
+	top: '5dp',
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE
+},
+"#skipWrapper": {
+	top: '20dp',
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE,
+	layout: 'horizontal'
+},
+"#skipImage":{
+	left: "10dp",
+	width: "20dp",
+	height: "20dp",
+	backgroundImage: "/images/mistaway/skip.png"
+},
+"#skipLabel":{
+	left: "10dp",
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE,
+	text: "SKIP NEXT",
+	font: {
+		fontFamily: 'BebasNeue',
+		fontSize: '20sp',
+		fontWeight: 'bold'
+	},
+	color: "white",
+	textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER
+},
+"#skip":{
+	top: "0dp",
+	width: "140dp",
+	height: "60dp",
+	text: ' ',
+	opacity: "0.4",
+	backgroundColor: "#F0F8FF",
+	borderRadius: 8
+},
+"#rightStatus":{
+	top: "35dp",
+	right: "0dp",
+	width: Alloy.CFG.halfWidth,
+	height: Ti.UI.SIZE,
+	layout: 'vertical'
+},
+"#statusHeader":{
+	top: "0dp",
+	text: "",
+	color: 'white',
+	font: {
+		fontFamily: 'BebasNeue',
+		fontSize: '16sp',
+		fontWeight: 'bold'
+	}
+},
+"#statusComponent": {
+	top: '5dp',
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE
+},
+"#statusWrapper": {
+	top: '20dp',
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE,
+	layout: 'vertical'
+},
+"#statusImage":{
+	top: '0dp',
+	width: "30dp",
+	height: "30dp",
+	zIndex: "100"
+},
+"#statusLabel":{
+	top: "30dp",
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE,
+	color: "white",
+	font: {
+		fontFamily: 'BebasNeue',
+		fontSize: '20sp',
+		fontWeight: 'bold'
+	},
+	zIndex: "99",
+	textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER
+},
+"#status": {
+	top: "0dp",
+	width: "140dp",
+	height: "125dp",
+	text: ' ',
+	opacity: "0.4",
+	backgroundColor: "#F0F8FF",
+	borderRadius: 8
+},
+"#modeComponent": {
+	top: '5dp',
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE
+},
+"#modeWrapper": {
+	top: '0dp',
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE,
+	layout: 'horizontal'
+},
+"#modeImage":{
+	left: "5dp",
+	width: "30dp",
+	height: "30dp",
+	backgroundImage: "/images/mistaway/mode.png"
+},
+"#modeLabel":{
+	left: "0dp",
+	width: "100dp",
+	height: "60dp",
+	color: "white",
+	font: {
+		fontFamily: 'BebasNeue',
+		fontSize: '20sp',
+		fontWeight: 'bold'
+	},
+	textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER
+},
+"#mode":{
+	top: "0dp",
+	width: "140dp",
+	height: "60dp",
+	text: ' ',
+	opacity: "0.4",
+	backgroundColor: "#F0F8FF",
+	borderRadius: 8
+},
+"#contactView":{
+	top: "260dp",
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE
+},
+"#contactLabel":{
+	top: "3dp",
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE,
+	text: "Contact Dealer",
+	color: "white",
+	font: {
+		fontFamily: 'BebasNeue',
+		fontSize: '20sp',
+		fontWeight: 'bold'
+	},
+	textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER
+},
+"#contact":{
+	top: "0dp",
+	width: "140dp",
+	height: "30dp",
+	opacity: "0.4",
+	backgroundColor: "#F0F8FF",
+	borderRadius: 8
+},
+"#logoView":{
+	top: "300dp",
+	bottom: "0dp",
+	width: Ti.UI.FILL,
+},
+"#logo":{
+	width: Ti.UI.FILL,
+	zIndex: "100"
+},
+"#page2": {
+	width: Ti.UI.FILL,
+	height: Ti.UI.FILL,
+	backgroundImage: "/images/mistaway/background2.jpg"
+},
+"#headerView2":{
+	top: "0dp",
+	width: Ti.UI.FILL,
+	height: "60dp"
+},
+"#vanityName2":{
+	top: '2dp',
+	width: Ti.UI.SIZE,
+	color: 'white',
+	font: {
+		fontFamily: 'BebasNeue',
+		fontSize: '26sp',
+		fontWeight: 'bold'
+	},
+	minimumFontSize: '12sp',
+	horizontalWrap: false,
+	textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER,
+	wordWrap: false
+},
+"#ownerName2":{
+	color : 'white',
+	font : {
+		fontFamily : 'BebasNeue',
+		fontSize : '18sp',
+		fontWeight : 'bold'
+	},
+	minimumFontSize:'12sp',
+	horizontalWrap : false,
+	textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER,
+	wordWrap : false,
+	top : '30dp',
+	width : Ti.UI.SIZE
+},
+"#leftRemote2":{
+	top: "35dp",
+	left: "0dp",
+	width: Alloy.CFG.halfWidth,
+	height: Ti.UI.SIZE,
+	layout: 'vertical'
+},
+"#remoteLabel2":{
+	top: "0dp",
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE,
+	text: "",
+	color: "white",
+	font: {
+		fontFamily: 'BebasNeue',
+		fontSize: '16sp',
+		fontWeight: 'bold'
+	},
+	textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER
+},
+"#mistComponent2": {
+	top: '5dp',
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE
+},
+"#mistWrapper2": {
+	top: '20dp',
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE,
+	layout: 'horizontal'
+},
+"#mistImage2":{
+	left: "10dp",
+	width: "25dp",
+	height: "20dp",
+	backgroundImage: "/images/mistaway/mist.png"
+},
+"#mistLabel2":{
+	left: "10dp",
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE,
+	color: "white",
+	text: "MIST",
+	font: {
+		fontFamily: 'BebasNeue',
+		fontSize: '20sp',
+		fontWeight: 'bold'
+	},
+	textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER
+},
+"#mist2":{
+	top: "0dp",
+	width: "140dp",
+	height: "60dp",
+	text: ' ',
+	opacity: "0.4",
+	backgroundColor: "#F0F8FF",
+	borderRadius: 8
+},
+"#stopComponent2": {
+	top: '5dp',
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE
+},
+"#stopWrapper2": {
+	top: '20dp',
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE,
+	layout: 'horizontal'
+},
+"#stopImage2":{
+	left: "10dp",
+	width: "25dp",
+	height: "25dp",
+	backgroundImage: "/images/mistaway/stop.png"
+},
+"#stopLabel2":{
+	left: "10dp",
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE,
+	text: "STOP",
+	color: "white",
+	font: {
+		fontFamily: 'BebasNeue',
+		fontSize: '20sp',
+		fontWeight: 'bold'
+	},
+	textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER
+},
+"#stop2":{
+	top: "0dp",
+	width: "140dp",
+	height: "60dp",
+	text: ' ',
+	opacity: "0.4",
+	backgroundColor: "#F0F8FF",
+	borderRadius: 8
+},
+"#skipComponent2": {
+	top: '5dp',
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE
+},
+"#skipWrapper2": {
+	top: '20dp',
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE,
+	layout: 'horizontal'
+},
+"#skipImage2":{
+	left: "10dp",
+	width: "20dp",
+	height: "20dp",
+	backgroundImage: "/images/mistaway/skip.png"
+},
+"#skipLabel2":{
+	left: "10dp",
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE,
+	color: "white",
+	text: "SKIP NEXT",
+	font: {
+		fontFamily: 'BebasNeue',
+		fontSize: '20sp',
+		fontWeight: 'bold'
+	},
+	textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER
+},
+"#skip2":{
+	top: "0dp",
+	width: "140dp",
+	height: "60dp",
+	text: ' ',
+	opacity: "0.4",
+	backgroundColor: "#F0F8FF",
+	borderRadius: 8
+},
+"#modeView2":{
+	top: "260dp",
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE
+},
+"#modeComponent2": {
+	top: '5dp',
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE
+},
+"#modeWrapper2": {
+	top: '0dp',
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE,
+	layout: 'horizontal'
+},
+"#modeImage2":{
+	left: "10dp",
+	width: "30dp",
+	height: "30dp",
+	backgroundImage: "/images/mistaway/mode.png"
+},
+"#modeLabel2":{
+	left: "0dp",
+	width: "100dp",
+	height: "60dp",
+	color: "white",
+	font: {
+		fontFamily: 'BebasNeue',
+		fontSize: '20sp',
+		fontWeight: 'bold'
+	},
+	textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER
+},
+"#mode2":{
+	top: "0dp",
+	width: "140dp",
+	height: "60dp",
+	text: ' ',
+	opacity: "0.4",
+	backgroundColor: "#F0F8FF",
+	borderRadius: 8
+},
+"#rightStatus2":{
+	top: "35dp",
+	right: "0dp",
+	width: Alloy.CFG.halfWidth,
+	height: Ti.UI.SIZE,
+	layout: 'vertical'
+},
+"#statusHeader2":{
+	top: "0dp",
+	text: "",
+	color: 'white',
+	font: {
+		fontFamily: 'BebasNeue',
+		fontSize: '16sp',
+		fontWeight: 'bold'
+	}
+},
+"#clearComponent2": {
+	top: '5dp',
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE
+},
+"#clearWrapper2": {
+	top: '20dp',
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE,
+	layout: 'horizontal'
+},
+"#clearImage2":{
+	left: "10dp",
+	width: "30dp",
+	height: "30dp",
+	backgroundImage: "/images/mistaway/clear.png"
+},
+"#clearLabel2":{
+	left: "10dp",
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE,
+	color: "white",
+	text: "CLEAR ERROR",
+	font: {
+		fontFamily: 'BebasNeue',
+		fontSize: '20sp',
+		fontWeight: 'bold'
+	},
+	textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER
+},
+"#clear2":{
+	top: "0dp",
+	width: "140dp",
+	height: "60dp",
+	text: ' ',
+	opacity: "0.4",
+	backgroundColor: "#F0F8FF",
+	borderRadius: 8
+},
+"#chargeComponent2": {
+	top: '5dp',
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE
+},
+"#chargeWrapper2": {
+	top: '20dp',
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE,
+	layout: 'horizontal'
+},
+"#chargeImage2":{
+	left: "10dp",
+	width: "30dp",
+	height: "30dp",
+	backgroundImage: "/images/mistaway/charge.png"
+},
+"#chargeLabel2":{
+	left: "10dp",
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE,
+	color: "white",
+	text: "CHARGE",
+	font: {
+		fontFamily: 'BebasNeue',
+		fontSize: '20sp',
+		fontWeight: 'bold'
+	},
+	textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER
+},
+"#charge2":{
+	top: "0dp",
+	width: "140dp",
+	height: "60dp",
+	text: ' ',
+	opacity: "0.4",
+	backgroundColor: "#F0F8FF",
+	borderRadius: 8
+},
+"#inspectComponent2": {
+	top: '5dp',
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE
+},
+"#inspectWrapper2": {
+	top: '20dp',
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE,
+	layout: 'horizontal'
+},
+"#inspectImage2":{
+	left: "10dp",
+	height: "30dp",
+	width: "30dp",
+	backgroundImage: "/images/mistaway/inspect.png"
+},
+"#inspectLabel2":{
+	left: "10dp",
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE,
+	color: "white",
+	text: "INSPECT Z1",
+	font: {
+		fontFamily: 'BebasNeue',
+		fontSize: '20sp',
+		fontWeight: 'bold'
+	},
+	textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER
+},
+"#inspect2":{
+	top: "0dp",
+	width: "140dp",
+	height: "60dp",
+	text: ' ',
+	opacity: "0.4",
+	backgroundColor: "#F0F8FF",
+	borderRadius: 8
+},
+"#inspectComponent22": {
+	top: '5dp',
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE
+},
+"#inspectWrapper22": {
+	top: '20dp',
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE,
+	layout: 'horizontal'
+},
+"#inspectImage22":{
+	left: "0dp",
+	height: "30dp",
+	width: "30dp",
+	backgroundImage: "/images/mistaway/inspect.png"
+},
+"#inspectLabel22":{
+	left: "10dp",
+	height: Ti.UI.SIZE,
+	width: Ti.UI.SIZE,
+	text: "INSPECT Z2",
+	color: "white",
+	font: {
+		fontFamily: 'BebasNeue',
+		fontSize: '20sp',
+		fontWeight: 'bold'
+	},
+	textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER
+},
+"#inspect22":{
+	top: "0dp",
+	width: "140dp",
+	height: "60dp",
+	text: ' ',
+	opacity: "0.4",
+	backgroundColor: "#F0F8FF",
+	borderRadius: 8
+},
+"#page3": {
+	width: Ti.UI.FILL,
+	height: Ti.UI.FILL,
+	backgroundColor: 'white'
+},
+"#vanityName3":{
+	top: '2dp',
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE,
+	color: 'black',
+	font: {
+		fontFamily: 'BebasNeue',
+		fontSize: '26sp',
+		fontWeight: 'bold'
+	},
+	zIndex: "99",
+	minimumFontSize: '12sp',
+	horizontalWrap: false,
+	textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER,
+	wordWrap: false
+},
+"#vanityName4":{
+	color : 'black',
+	font : {
+		fontFamily : 'BebasNeue',
+		fontSize : '26sp',
+		fontWeight : 'bold'
+	},
+	zIndex: "99",
+	minimumFontSize:'12sp',
+	horizontalWrap : false,
+	textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER,
+	wordWrap : false,
+	top : 2,
+	width : Ti.UI.SIZE
+}
+"#table3":{
+	top: "35dp",
+	width: Ti.UI.FILL,
+	height: Ti.UI.FILL,
+	scrollable: false
+},
+"#statusImage3":{
+	left: "5dp",
+	width: "50dp",
+	height: "50dp"
+}
+"#systemStatus3":{
+	top: "10dp",
+	left: "60dp",
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE,
+	color: 'black',
+	font: {
+		fontFamily: 'BebasNeue',
+		fontSize: '20sp',
+		fontWeight: 'bold'
+	},
+	zIndex: "99",
+	minimumFontSize: '12sp',
+	horizontalWrap: false,
+	textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT
+},
+"#systemTypeLabel3":{
+	top: "3dp",
+	left: "30dp",
+	width: Ti.UI.SIZE,
+	color: 'black',
+	text: "System Type:",
+	font: {
+		fontFamily: 'BebasNeue',
+		fontSize: '16sp',
+		fontWeight: 'bold'
+	},
+	minimumFontSize: '12sp',
+	textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT
+},
+"#systemType3":{
+	top: "3dp",
+	left: Alloy.CFG.halfWidth,
+	width: Ti.UI.SIZE,
+	color: '#576996',
+	font: {
+		fontFamily: 'BebasNeue',
+		fontSize: '16sp',
+		fontWeight: 'bold'
+	},
+	minimumFontSize: '12sp',
+	textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT
+},
+"#systemModeLabel3":{
+	top: "3dp",
+	left: "30dp",
+	width: Ti.UI.SIZE,
+	color: 'black',
+	text: "System Mode:",
+	font: {
+		fontFamily: 'BebasNeue',
+		fontSize: '16sp',
+		fontWeight: 'bold'
+	},
+	minimumFontSize: '12sp',
+	textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT
+},
+"#systemMode3":{
+	top: "3dp",
+	left: Alloy.CFG.halfWidth,
+	width: Ti.UI.SIZE,
+	color: '#576996',
+	font: {
+		fontFamily: 'BebasNeue',
+		fontSize: '16sp',
+		fontWeight: 'bold'
+	},
+	minimumFontSize: '12sp',
+	textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT
+},
+"#tankLevelLabel3":{
+	top: "3dp",
+	left: "30dp",
+	width: Ti.UI.SIZE,
+	color: 'black',
+	text: "Tank Level:",
+	font: {
+		fontFamily: 'BebasNeue',
+		fontSize: '16sp',
+		fontWeight: 'bold'
+	},
+	minimumFontSize: '12sp',
+	textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT
+},
+"#tankLevel3":{
+	top: "3dp",
+	left: Alloy.CFG.halfWidth,
+	width: Ti.UI.SIZE,
+	color: '#576996',
+	font: {
+		fontFamily: 'BebasNeue',
+		fontSize: '16sp',
+		fontWeight: 'bold'
+	},
+	minimumFontSize: '12sp',
+	textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT
+},
+"#tankSizeLabel3":{
+	top: "3dp",
+	left: "30dp",
+	width: Ti.UI.SIZE,
+	color: 'black',
+	text: "Tank Size [GALLONS]:",
+	font: {
+		fontFamily: 'BebasNeue',
+		fontSize: '16sp',
+		fontWeight: 'bold'
+	},
+	minimumFontSize: '12sp',
+	textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT
+},
+"#tankSize3":{
+	top: "3dp",
+	left: Alloy.CFG.halfWidth,
+	width: Ti.UI.SIZE,
+	color: '#576996',
+	font: {
+		fontFamily: 'BebasNeue',
+		fontSize: '16sp',
+		fontWeight: 'bold'
+	},
+	minimumFontSize: '12sp',
+	textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT
+},
+"#numberOfNozzleLabel3":{
+	top: "3dp",
+	left: "30dp",
+	width: Ti.UI.SIZE,
+	color: 'black',
+	text: "NUMBER OF NOZZLES:",
+	font: {
+		fontFamily: 'BebasNeue',
+		fontSize: '16sp',
+		fontWeight: 'bold'
+	},
+	minimumFontSize: '12sp',
+	textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT
+},
+"#numberOfNozzle3":{
+	top: "3dp",
+	left: Alloy.CFG.halfWidth,
+	width: Ti.UI.SIZE,
+	color: '#576996',
+	font: {
+		fontFamily: 'BebasNeue',
+		fontSize: '16sp',
+		fontWeight: 'bold'
+	},
+	minimumFontSize: '12sp',
+	textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT
+},
+"#noz1Label3":{
+	color : 'black',
+	font: {
+		fontFamily: 'BebasNeue',
+		fontSize: '16sp',
+		fontWeight: 'bold'
+	},
+	text: "nozzles - zone 1:",
+	top: "3dp",
+	left: "30dp",
+	minimumFontSize:12,
+	textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT,
+	width : Ti.UI.SIZE
+},
+"#noz13":{
+	color : '#576996',
+	font: {
+		fontFamily: 'BebasNeue',
+		fontSize: '16sp',
+		fontWeight: 'bold'
+	},
+	top: "3dp",
+	left: "50%",
+	minimumFontSize:12,
+	textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT,
+	width : Ti.UI.SIZE
+}
+
+"#noz2Label3":{
+	color : 'black',
+	font: {
+		fontFamily: 'BebasNeue',
+		fontSize: '16sp',
+		fontWeight: 'bold'
+	},
+	text: "nozzles - zone 2:",
+	top: "3dp",
+	left: "30dp",
+	minimumFontSize:12,
+	textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT,
+	width : Ti.UI.SIZE
+}
+
+"#noz23":{
+	color : '#576996',
+	font: {
+		fontFamily: 'BebasNeue',
+		fontSize: '16sp',
+		fontWeight: 'bold'
+	},
+	top: "3dp",
+	left: "50%",
+	minimumFontSize:12,
+	textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT,
+	width : Ti.UI.SIZE
+},
+"#lastMistLabel3":{
+	top: "3dp",
+	left: "30dp",
+	width: Ti.UI.SIZE,
+	color: 'black',
+	text: "Last Mist:",
+	font: {
+		fontFamily: 'BebasNeue',
+		fontSize: '16sp',
+		fontWeight: 'bold'
+	},
+	minimumFontSize: '12sp',
+	textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT
+},
+"#lastMist3":{
+	top: "3dp",
+	left: Alloy.CFG.halfWidth,
+	width: Ti.UI.SIZE,
+	color: '#576996',
+	font: {
+		fontFamily: 'BebasNeue',
+		fontSize: '16sp',
+		fontWeight: 'bold'
+	},
+	minimumFontSize: '12sp',
+	textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT
+},
+"#actualFlowRateLabel3":{
+	top: "3dp",
+	left: "30dp",
+	width: Ti.UI.SIZE,
+	color: 'black',
+	text: "ACTUAL FLOW RATE:",
+	font: {
+		fontFamily: 'BebasNeue',
+		fontSize: '16sp',
+		fontWeight: 'bold'
+	},
+	minimumFontSize: '12sp',
+	textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT
+},
+"#actualFlowRate3":{
+	top: "3dp",
+	left: Alloy.CFG.halfWidth,
+	width: Ti.UI.SIZE,
+	color: '#576996',
+	font: {
+		fontFamily: 'BebasNeue',
+		fontSize: '16sp',
+		fontWeight: 'bold'
+	},
+	minimumFontSize: '12sp',
+	textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT
+},
+"#afr1Label3":{
+	color : 'black',
+	font: {
+		fontFamily: 'BebasNeue',
+		fontSize: '16sp',
+		fontWeight: 'bold'
+	},
+	text: "flow rate - zone 1:",
+	top: "3dp",
+	left: "30dp",
+	minimumFontSize:"12sp",
+	textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT,
+	width : Ti.UI.SIZE
+}
+
+"#afr13":{
+	color : '#576996',
+	font: {
+		fontFamily: 'BebasNeue',
+		fontSize: '16sp',
+		fontWeight: 'bold'
+	},
+	top: "3dp",
+	left: "50%",
+	minimumFontSize:"12sp",
+	textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT,
+	width : Ti.UI.SIZE
+}
+
+"#afr2Label3":{
+	color : 'black',
+	font: {
+		fontFamily: 'BebasNeue',
+		fontSize: '16sp',
+		fontWeight: 'bold'
+	},
+	text: "flow rate - zone 2:",
+	top: "3dp",
+	left: "30dp",
+	minimumFontSize:"12sp",
+	textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT,
+	width : Ti.UI.SIZE
+}
+
+"#afr23":{
+	color : '#576996',
+	font: {
+		fontFamily: 'BebasNeue',
+		fontSize: '16sp',
+		fontWeight: 'bold'
+	},
+	top: "3dp",
+	left: "50%",
+	minimumFontSize:"12sp",
+	textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT,
+	width : Ti.UI.SIZE
+},
+"#nextMistLabel3":{
+	top: "3dp",
+	left: "30dp",
+	width: Ti.UI.SIZE,
+	color: 'black',
+	text: "Next Mist:",
+	font: {
+		fontFamily: 'BebasNeue',
+		fontSize: '16sp',
+		fontWeight: 'bold'
+	},
+	minimumFontSize: '12sp',
+	textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT
+},
+"#nextMist3":{
+	top: "3dp",
+	left: Alloy.CFG.halfWidth,
+	width: Ti.UI.SIZE,
+	color: '#576996',
+	font: {
+		fontFamily: 'BebasNeue',
+		fontSize: '16sp',
+		fontWeight: 'bold'
+	},
+	minimumFontSize: '12sp',
+	textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT
+},
+"#lastCommLabel3":{
+	top: "3dp",
+	left: "30dp",
+	width: Ti.UI.SIZE,
+	color: 'black',
+	text: "Last System Comm:",
+	font: {
+		fontFamily: 'BebasNeue',
+		fontSize: '16sp',
+		fontWeight: 'bold'
+	},
+	minimumFontSize: '12sp',
+	textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT
+},
+"#lastComm3":{
+	top: "3dp",
+	left: Alloy.CFG.halfWidth,
+	width: Ti.UI.SIZE,
+	color: '#576996',
+	text: "Last Comm:",
+	font: {
+		fontFamily: 'BebasNeue',
+		fontSize: '16sp',
+		fontWeight: 'bold'
+	},
+	minimumFontSize: '12sp',
+	textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT
+},
+"#signalLabel3":{
+	top: "3dp",
+	left: "30dp",
+	width: Ti.UI.SIZE,
+	color: 'black',
+	text: "Signal Strength:",
+	font: {
+		fontFamily: 'BebasNeue',
+		fontSize: '16sp',
+		fontWeight: 'bold'
+	},
+	minimumFontSize: '12sp',
+	textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT
+},
+"#signal3":{
+	top: "3dp",
+	left: Alloy.CFG.halfWidth,
+	width: Ti.UI.SIZE,
+	color: '#576996',
+	font: {
+		fontFamily: 'BebasNeue',
+		fontSize: '16sp',
+		fontWeight: 'bold'
+	},
+	minimumFontSize: '12sp',
+	textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT
+},
+"#lastGatewayLabel3":{
+	top: "3dp",
+	left: "30dp",
+	width: Ti.UI.SIZE,
+	color: 'black',
+	text: "LAST GATEWAY COMM:",
+	font: {
+		fontFamily: 'BebasNeue',
+		fontSize: '16sp',
+		fontWeight: 'bold'
+	},
+	minimumFontSize: '12sp',
+	textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT
+},
+"#lastGateway3":{
+	top: "3dp",
+	left: Alloy.CFG.halfWidth,
+	width: Ti.UI.SIZE,
+	color: '#576996',
+	font: {
+		fontFamily: 'BebasNeue',
+		fontSize: '16sp',
+		fontWeight: 'bold'
+	},
+	minimumFontSize: '12sp',
+	textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT
+},
+"#macAddressLabel3":{
+	top: "3dp",
+	left: "30dp",
+	width: Ti.UI.SIZE,
+	color: 'black',
+	text: "MAC ADDRESS:",
+	font: {
+		fontFamily: 'BebasNeue',
+		fontSize: '16sp',
+		fontWeight: 'bold'
+	},
+	minimumFontSize: '12sp',
+	textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT
+},
+"#macAddress3":{
+	top: "3dp",
+	left: Alloy.CFG.halfWidth,
+	width: Ti.UI.SIZE,
+	color: '#576996',
+	font: {
+		fontFamily: 'BebasNeue',
+		fontSize: '16sp',
+		fontWeight: 'bold'
+	},
+	minimumFontSize: '12sp',
+	textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT
+},
+"#infoList":{
+	top: Alloy.CFG.height,
+	height: Alloy.CFG.halfHeight,
+	backgroundColor: "white",
+	visible: false,
+},
+"#savebtn":{
+	top: "5pdp",
+	left: "10dp",
+	height: "40dp",
+	zIndex: "99",
+},
+"#closebtn":{
+	top: "5pdp",
+	right: "10dp",
+	height: "40dp",
+	zIndex: "99",
+}
+
+"#modeList": {
+	top: "50dp",
+	selectionIndicator: true,
+	useSpinner: true
+},
+"#column1": {}
+
+"#table4":{
+	top: "35dp",
+	height: "100%"
+}
+
+".ct":{
+	color : 'black',
+	font : {
+		fontFamily : 'BebasNeue',
+		fontSize : '22sp',
+		fontWeight : 'bold'
+	},
+	text: "System Type:",
+	top: "6dp",
+	left: "30dp",
+	minimumFontSize:'12sp',
+	textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT,
+	width : Ti.UI.SIZE
+}
+
+".time":{
+	color : '#576996',
+	font : {
+		fontFamily : 'BebasNeue',
+		fontSize : '22sp',
+		fontWeight : 'bold'
+	},
+	top: "6dp",
+	left: "25%",
+	minimumFontSize:'12sp',
+	textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT,
+	width : Ti.UI.SIZE
+}
+
+
+".changebtn":{
+	top: "6dp",
+	left: "80%"
+}
+
+
+".duration":{
+	color : '#576996',
+	font : {
+		fontFamily : 'BebasNeue',
+		fontSize : '22sp',
+		fontWeight : 'bold'
+	},
+	top: "6dp",
+	left: "55%",
+	minimumFontSize:12,
+	textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT,
+	width : Ti.UI.SIZE
+}
+
+
+"#timesavebtn":{
+	zIndex: "99",
+	height: "40dp",
+	top: "5pdp",
+	right: "10dp"
+}
+"#timeclosebtn":{
+	zIndex: "99",
+	height: "40dp",
+	top: "5pdp",
+	left: "10dp"
+}
+
+"#tod":{
+	zIndex: "99",
+	height: "40dp",
+	bottom: "5pdp",
+	left: "50dp",
+	font : {
+		fontFamily : 'BebasNeue',
+		fontSize : '20sp',
+	},
+}
+"#sec":{
+	zIndex: "99",
+	height: "40dp",
+	bottom: "5pdp",
+	right: "30dp",
+	font : {
+		fontFamily : 'BebasNeue',
+		fontSize : '20sp',
+	},
+}
+".editImage":{
+	height: "30dp",
+	width: "30dp",
+	top: "5pdp",
+	left: "80%"
+}
+"#timeList":{
+	backgroundColor: "white",
+	visible: "false",
+	top: "100%",
+	height: "50%"
+}

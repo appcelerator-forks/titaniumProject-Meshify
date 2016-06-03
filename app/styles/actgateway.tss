@@ -1,0 +1,83 @@
+
+".container" : {
+  
+},
+
+'#gatewayMainView': {
+	width : Ti.UI.FILL,
+	height : Ti.UI.FILL,
+}
+
+"#actGatewayWrapper" : {
+	layout: "vertical"
+},
+
+"#gatewayImg" : {
+	image: "https://s3.amazonaws.com/LynxMVC4-Bucket/gatewayExplain.jpg",
+	left: "10dp",
+	right: "10dp",
+		
+},
+
+"#searchgatewayBar": {
+	top: '0dp',
+	width: '100%',
+	height: '40dp',
+	showCancel: false
+},
+"#searchgatewayBar[platform=android]": {
+	width: '65%'
+},
+"#lb1": {
+	text: "Enter the last four characters of",
+	color: '#ccc',
+	font: {
+		fontFamily: 'Arial',
+		fontSize: '12sp',
+	},
+	minimumFontSize: '12sp',
+	top: "10dp",
+},
+"#lb2": {
+	text: "the MAC address of your gateway",
+	color: '#ccc',
+	font: {
+		fontFamily: 'Arial',
+		fontSize: '12sp',
+	},
+	minimumFontSize: '12sp',
+}
+
+"#macAdd" : {
+  color: 'black',
+  font: {
+
+    fontSize: '14sp',
+    fontWeight: 'bold'
+  },
+  left: '15dp',
+  top: '15dp',
+}
+
+"#panID" : {
+  color: 'gray',
+  font: {
+    fontSize: '14sp'
+  },
+  right: '70dp', 
+  top: '15dp',
+}
+
+".lbsmall" : {
+	font: {
+    
+    	fontSize: '10sp'
+  	},
+}
+
+".lbmedium" : {
+	font: {
+    
+    	fontSize: '14sp'
+  	},
+}

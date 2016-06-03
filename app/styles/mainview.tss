@@ -1,0 +1,99 @@
+"#mainView":{
+	backgroundColor: '#efefef'
+},
+"#mainView[platform=ios]": {
+	top: "20dp"
+},
+"#menuView": {
+	top: 0,
+	width: Ti.UI.FILL,
+	height: Ti.UI.FILL
+},
+"#mainViewContainerWrapper": {
+	layout: 'vertical',
+	top: 0,
+	width: Ti.UI.FILL,
+	height: Ti.UI.FILL,
+	backgroundColor: '#efefef'
+},
+"#mainTopBar":{
+	width: Ti.UI.FILL,
+	height: "55dp",
+	backgroundColor: "#c2c2c2"
+},
+"#mainViewContainer": {
+	top: 0,
+	width: Ti.UI.FILL,
+	height: Ti.UI.FILL
+},
+"#menuButton":{
+	top: "12dp",
+	left: "10dp",
+	width: "40dp",
+	height: "30dp",
+	backgroundImage: '/slideMenu/images/menu_button.png'
+},
+"#toolBarLogo":{
+	image: '/images/mistaway/imistaway.png',
+	top: "10dp",
+	width: '120dp'
+},
+'#refreshBtn[platform=android]': {
+	top: "10dp",
+	left: "50dp",
+	width: "35dp",
+	height: "35dp",
+	backgroundImage: "/images/loop.png"
+},
+"#backBtn":{
+	top: "10dp",
+	left: "80dp",
+	width: "35dp",
+	height: "35dp",
+	backgroundImage: "/images/back.png",
+	visible: false
+},
+"#backBtn[platform=ios]": {
+	left: '50'
+},
+"#switchBtn":{
+	top: "10dp",
+	right: "55dp",
+	width: "35dp",
+	height: "35dp",
+	backgroundImage: "/images/map.png"
+},
+"#homebtn":{
+	top: "10dp",
+	right: "10dp",
+	width: "35dp",
+	height: "35dp",
+	backgroundImage: "/images/home.png"
+},
+"#nextbtn":{
+	top: "25dp",
+	right: "30dp",
+	width: "40dp",
+	height: "15dp",
+	visible: false,
+	backgroundImage: "/images/next_btn.png"
+},
+"#addbtn":{
+	top: "25dp",
+	right: "30dp",
+	width: "40dp",
+	height: "15dp",
+	visible: false,
+	backgroundImage: "/images/next_btn.png"
+},
+"#cusbackbtn":{
+	top: "10dp",
+	left: "80dp",
+	width: "35dp",
+	height: "35dp",
+	backgroundImage: "/images/back.png",
+	visible: false
+},
+"#cusbackbtn[platform=ios]": {
+	left: '50'
+},

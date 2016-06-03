@@ -1,0 +1,619 @@
+"#wrapper": {
+	top: 0,
+	width: Ti.UI.FILL,
+	height: Ti.UI.FILL
+},
+"#mapWrapper": {
+	top: 0,
+	width: Ti.UI.FILL,
+	height: Ti.UI.FILL
+},
+"#map": {
+	top: '0dp',
+	left: '0dp',
+	userLocation: false,
+	region: {
+		latitude: Alloy.Globals.LATITUDE_BASE,
+		longitude: Alloy.Globals.LONGITUDE_BASE
+	},
+	mapType: Alloy.Globals.Map.NORMAL_TYPE
+},
+"#list": {},
+"#closeBtnView": {
+	bottom: '-30dp',
+	width: '100dp',
+	height: '30dp',
+	borderRadius: "8",
+	backgroundColor: "#eeeeee"
+},
+"#closeBtnImage": {
+	width: "35dp",
+	height: '35dp',
+	image: "/images/mistaway/down.png"
+},
+
+"#zoomToMe": {
+	left: '5dp',
+	width: "35dp",
+	height: "35dp",
+	backgroundImage: '/images/location.png'
+},
+"#zoomToMe[platform=android]": {
+	top: '5dp'
+},
+"#zoomToMe[platform=ios]": {
+	bottom: '5dp'
+},
+"#mapRefreshButton": {
+	right: '5dp',
+	title: 'Refresh',
+	backgroundImage: '/slideMenu/images/toolBar_bg.png'
+},
+"#mapRefreshButton[platform=android]": {
+	top: '5dp',
+	width: '100dp',
+	height: '40dp'
+},
+"#mapRefreshButton[platform=ios]": {
+	bottom: '5dp',
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE,
+	borderRadius: '10'
+},
+"#mapListView": {
+	bottom: '-220dp',
+	width: Ti.UI.FILL,
+	height: '220dp',
+	backgroundColor: '#F5F8FA'
+},
+"#listView": {
+	width: Ti.UI.FILL,
+	height: Ti.UI.FILL,
+	separatorColor: 'transparent'
+},
+"#wrapper1[platform=ios]": {
+	backgroundGradient: {
+		type: 'linear',
+		colors: [
+			{
+				color: '#e2e5e8',
+				offset: 0.0
+			},
+			{
+				color: '#f0f2f3',
+				offset: 1.0
+			}
+		]
+	}
+},
+".itemlist": {
+	width: Ti.UI.FILL,
+	height: '60dp'
+},
+".itemlist[platform=android]": {
+	accessoryType: Titanium.UI.LIST_ACCESSORY_TYPE_DISCLOSURE,
+	backgroundGradient: {
+		type: 'linear',
+		colors: [
+			{
+				color: '#e2e5e8',
+				offset: 0.0
+			},
+			{
+				color: '#f0f2f3',
+				offset: 1.0
+			}
+		]
+	}
+},
+"#nodeColorGate": {
+	left: '10dp',
+	width: '30dp',
+	height: '30dp'
+},
+"#gateRowLeft": {
+	top: '1dp',
+	left: "15%",
+	width: "40%",
+	height: "90dp"
+},
+"#gateRowVanityName": {
+	top: '2dp',
+	left: '0dp',
+	width: Ti.UI.SIZE,
+	height: '30dp',
+	color: '#576996',
+	font: {
+		fontFamily: 'Arial',
+		fontSize: '12sp',
+		fontWeight: 'bold'
+	},
+	minimumFontSize: '12sp',
+	horizontalWrap: false,
+	textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT,
+	wordWrap: false
+},
+"#gateRowAddress1": {
+	top: '16dp',
+	left: '0dp',
+	width: Ti.UI.SIZE,
+	height: '30dp',
+	color: '#576996',
+	font: {
+		fontFamily: 'Arial',
+		fontSize: '12sp',
+		fontWeight: 'bold'
+	},
+	minimumFontSize: '12sp',
+	horizontalWrap: false,
+	textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT,
+	wordWrap: false
+},
+"#gateRowAddress2":{
+	top: '29dp',
+	left: '0dp',
+	width: Ti.UI.SIZE,
+	height: '30dp',
+	color: '#576996',
+	font: {
+		fontFamily: 'Arial',
+		fontSize: '12sp',
+		fontWeight: 'bold'
+	},
+	minimumFontSize: '12sp',
+	horizontalWrap: false,
+	textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT,
+	wordWrap: false
+},
+"#nodecolormc13": {
+	left: '10dp',
+	width: '30dp',
+	height: '30dp'
+},
+"#rowLeft13": {
+	top: '1dp',
+	left: "15%",
+	width: "40%",
+	height: "90dp"
+},
+"#mc13rowVanityName":{
+	top: '2dp',
+	left: '0dp',
+	width: Ti.UI.SIZE,
+	height: '30dp',
+	color: '#576996',
+	font: {
+		fontFamily: 'Arial',
+		fontSize: '12sp',
+		fontWeight: 'bold'
+	},
+	minimumFontSize: '12sp',
+	horizontalWrap: false,
+	textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT,
+	wordWrap: false
+},
+"#mc13rowAddress1":{
+	left: '0dp',
+	top: '16dp',
+	width: Ti.UI.SIZE,
+	height: '30dp',
+	color: '#576996',
+	font: {
+		fontFamily: 'Arial',
+		fontSize: '12sp',
+		fontWeight: 'bold'
+	},
+	minimumFontSize: '12sp',
+	horizontalWrap: false,
+	textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT,
+	wordWrap: false
+},
+"#mc13rowAddress2": {
+	top: '29dp',
+	left: '0dp',
+	width: Ti.UI.SIZE,
+	height: '30dp',
+	color: '#576996',
+	font: {
+		fontFamily: 'Arial',
+		fontSize: '12sp',
+		fontWeight: 'bold'
+	},
+	minimumFontSize: '12sp',
+	horizontalWrap: false,
+	textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT,
+	wordWrap: false
+},
+"#rowRight13": {
+	top: '1dp',
+	right: "0%",
+	width: "40%",
+	height: "90dp"
+},
+"#mc13rowConnected": {
+	top: '2dp',
+	left: '0dp',
+	width: Ti.UI.SIZE,
+	height: '30dp',
+	color: '#576996',
+	font: {
+		fontFamily: 'Arial',
+		fontSize: '12sp',
+		fontWeight: 'bold'
+	},
+	minimumFontSize: '12sp',
+	horizontalWrap: false,
+	textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT,
+	wordWrap: false
+},
+"#mc13rowLevel": {
+	top: '16dp',
+	left: '0dp',
+	width: Ti.UI.SIZE,
+	height: '30dp',
+	color: '#576996',
+	font: {
+		fontFamily: 'Arial',
+		fontSize: '12sp',
+		fontWeight: 'bold'
+	},
+	minimumFontSize: '12sp',
+	horizontalWrap: false,
+	textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT,
+	wordWrap: false
+},
+"#mc13rowLastMist":{
+	top: '29dp',
+	left: '0dp',
+	width: Ti.UI.SIZE,
+	height: '30dp',
+	color: '#576996',
+	font: {
+		fontFamily: 'Arial',
+		fontSize: '10sp',
+		fontWeight: 'bold'
+	},
+	minimumFontSize: '10sp',
+	horizontalWrap: false,
+	textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT,
+	wordWrap: false
+},
+"#nodecolormc13z": {
+	left: '10dp',
+	width: '30dp',
+	height: '30dp'
+},
+"#rowLeft13z":{
+	top: '1dp',
+	left: "15%",
+	height: "90dp",
+	width: "40%"
+},
+"#rowRight13z":{
+	top: '1dp',
+	right: "0%",
+	width: "40%",
+	height: "90dp"
+},
+"#mc13zrowVanityName":{
+	color: '#576996',
+	font: {
+		fontFamily: 'Arial',
+		fontSize: '12sp',
+		fontWeight: 'bold'
+	},
+	minimumFontSize: '12sp',
+	horizontalWrap: false,
+	textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT,
+	wordWrap: false,
+	width: Ti.UI.SIZE,
+	left: '0dp',
+	top: '2dp',
+	height: '30dp'
+},
+"#mc13zrowAddress1":{
+	color: '#576996',
+	font: {
+		fontFamily: 'Arial',
+		fontSize: '12sp',
+		fontWeight: 'bold'
+	},
+	minimumFontSize: '12sp',
+	left: '0dp',
+	horizontalWrap: false,
+	textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT,
+	wordWrap: false,
+	width: Ti.UI.SIZE,
+	top: '16dp',
+	height: '30dp'
+},
+"#mc13zrowAddress2":{
+	color: '#576996',
+	font: {
+		fontFamily: 'Arial',
+		fontSize: '12sp',
+		fontWeight: 'bold'
+	},
+	minimumFontSize: '12sp',
+	left: '0dp',
+	horizontalWrap: false,
+	textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT,
+	wordWrap: false,
+	top: '29dp',
+	width: Ti.UI.SIZE,
+	height: '30dp'
+},
+"#mc13zrowConnected":{
+	color: '#576996',
+	font: {
+		fontFamily: 'Arial',
+		fontSize: '12sp',
+		fontWeight: 'bold'
+	},
+	minimumFontSize: '12sp',
+	left: '0dp',
+	horizontalWrap: false,
+	textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT,
+	wordWrap: false,
+	top: '2dp',
+	width: Ti.UI.SIZE,
+	height: '30dp'
+},
+"#mc13zrowLevel":{
+	color: '#576996',
+	font: {
+		fontFamily: 'Arial',
+		fontSize: '12sp',
+		fontWeight: 'bold'
+	},
+	minimumFontSize: '12sp',
+	left: '0dp',
+	horizontalWrap: false,
+	textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT,
+	wordWrap: false,
+	top: '16dp',
+	width: Ti.UI.SIZE,
+	height: '30dp'
+},
+"#mc13zrowLastMist":{
+	color: '#576996',
+	font: {
+		fontFamily: 'Arial',
+		fontSize: '10sp',
+		fontWeight: 'bold'
+	},
+	minimumFontSize: '10sp',
+	left: '0dp',
+	horizontalWrap: false,
+	textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT,
+	wordWrap: false,
+	top: '29dp',
+	width: Ti.UI.SIZE,
+	height: '30dp'
+},
+"#nodecolormc3": {
+	left: '10dp',
+	width: '30dp',
+	height: '30dp'
+},
+"#rowLeft3": {
+	top: '1dp',
+	left: "15%",
+	height: "90dp",
+	width: "40%"
+},
+"#rowRight3": {
+	top: '1dp',
+	right: "0%",
+	width: "40%",
+	height: "90dp"
+},
+"#mc3rowVanityName":{
+	color: '#576996',
+	font: {
+		fontFamily: 'Arial',
+		fontSize: '12sp',
+		fontWeight: 'bold'
+	},
+	minimumFontSize: '12sp',
+	horizontalWrap: false,
+	textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT,
+	wordWrap: false,
+	width: Ti.UI.SIZE,
+	left: '0dp',
+	top: '2dp',
+	height: '30dp'
+},
+"#mc3rowAddress1":{
+	color: '#576996',
+	font: {
+		fontFamily: 'Arial',
+		fontSize: '12sp',
+		fontWeight: 'bold'
+	},
+	minimumFontSize: '12sp',
+	left: '0dp',
+	horizontalWrap: false,
+	textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT,
+	wordWrap: false,
+	width: Ti.UI.SIZE,
+	top: '16dp',
+	height: '30dp'
+},
+"#mc3rowAddress2":{
+	color: '#576996',
+	font: {
+		fontFamily: 'Arial',
+		fontSize: '12sp',
+		fontWeight: 'bold'
+	},
+	minimumFontSize: '12sp',
+	left: '0dp',
+	horizontalWrap: false,
+	textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT,
+	wordWrap: false,
+	top: '29dp',
+	width: Ti.UI.SIZE,
+	height: '30dp'
+},
+"#mc3rowConnected":{
+	color: '#576996',
+	font: {
+		fontFamily: 'Arial',
+		fontSize: '12sp',
+		fontWeight: 'bold'
+	},
+	minimumFontSize: '12sp',
+	left: '0dp',
+	horizontalWrap: false,
+	textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT,
+	wordWrap: false,
+	top: '2dp',
+	width: Ti.UI.SIZE,
+	height: '30dp'
+},
+"#mc3rowLevel":{
+	color: '#576996',
+	font: {
+		fontFamily: 'Arial',
+		fontSize: '12sp',
+		fontWeight: 'bold'
+	},
+	minimumFontSize: '12sp',
+	left: '0dp',
+	horizontalWrap: false,
+	textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT,
+	wordWrap: false,
+	top: '16dp',
+	width: Ti.UI.SIZE,
+	height: '30dp'
+},
+"#mc3rowLastMist":{
+	color: '#576996',
+	font: {
+		fontFamily: 'Arial',
+		fontSize: '10sp',
+		fontWeight: 'bold'
+	},
+	minimumFontSize: '10sp',
+	left: '0dp',
+	horizontalWrap: false,
+	textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT,
+	wordWrap: false,
+	top: '29dp',
+	width: Ti.UI.SIZE,
+	height: '30dp'
+},
+"#nodecolormc3z": {
+	left: '10dp',
+	width: '30dp',
+	height: '30dp'
+},
+"#rowLeft3z":{
+	top: '1dp',
+	left: "15%",
+	height: "90dp",
+	width: "40%"
+},
+"#rowRight3z":{
+	top: '1dp',
+	right: "0%",
+	width: "40%",
+	height: "90dp"
+},
+"#mc3zrowVanityName":{
+	color: '#576996',
+	font: {
+		fontFamily: 'Arial',
+		fontSize: '12sp',
+		fontWeight: 'bold'
+	},
+	minimumFontSize: '12sp',
+	horizontalWrap: false,
+	textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT,
+	wordWrap: false,
+	width: Ti.UI.SIZE,
+	left: '0dp',
+	top: '2dp',
+	height: '30dp'
+},
+"#mc3zrowAddress1":{
+	color: '#576996',
+	font: {
+		fontFamily: 'Arial',
+		fontSize: '12sp',
+		fontWeight: 'bold'
+	},
+	minimumFontSize: '12sp',
+	left: '0dp',
+	horizontalWrap: false,
+	textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT,
+	wordWrap: false,
+	width: Ti.UI.SIZE,
+	top: '16dp',
+	height: '30dp'
+},
+"#mc3zrowAddress2":{
+	color: '#576996',
+	font: {
+		fontFamily: 'Arial',
+		fontSize: '12sp',
+		fontWeight: 'bold'
+	},
+	minimumFontSize: '12sp',
+	left: '0dp',
+	horizontalWrap: false,
+	textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT,
+	wordWrap: false,
+	top: '29dp',
+	width: Ti.UI.SIZE,
+	height: '30dp'
+},
+"#mc3zrowConnected":{
+	color: '#576996',
+	font: {
+		fontFamily: 'Arial',
+		fontSize: '12sp',
+		fontWeight: 'bold'
+	},
+	minimumFontSize: '12sp',
+	left: '0dp',
+	horizontalWrap: false,
+	textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT,
+	wordWrap: false,
+	top: '2dp',
+	width: Ti.UI.SIZE,
+	height: '30dp'
+},
+"#mc3zrowLevel":{
+	color: '#576996',
+	font: {
+		fontFamily: 'Arial',
+		fontSize: '12sp',
+		fontWeight: 'bold'
+	},
+	minimumFontSize: '12sp',
+	left: '0dp',
+	horizontalWrap: false,
+	textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT,
+	wordWrap: false,
+	top: '16dp',
+	width: Ti.UI.SIZE,
+	height: '30dp'
+},
+"#mc3zrowLastMist":{
+	color: '#576996',
+	font: {
+		fontFamily: 'Arial',
+		fontSize: '10sp',
+		fontWeight: 'bold'
+	},
+	minimumFontSize: '10sp',
+	left: '0dp',
+	horizontalWrap: false,
+	textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT,
+	wordWrap: false,
+	top: '29dp',
+	width: Ti.UI.SIZE,
+	height: '30dp'
+}

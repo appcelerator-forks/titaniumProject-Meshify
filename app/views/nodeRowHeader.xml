@@ -1,0 +1,5 @@
+<Alloy>
+	<TableViewRow>
+		<Label top="70" left="0" text="{mac}"/>
+	</TableViewRow>
+</Alloy>

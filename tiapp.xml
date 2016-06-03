@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?><ti:app xmlns:ti="http://ti.appcelerator.org">
+    <id>io.trigger.forge36e5a4702df411e2b5de12313d31f141</id>
+    <name>iMistaway</name>
+    <version>1502250000</version>
+    <publisher>lewiswight</publisher>
+    <url>http://</url>
+    <description>not specified</description>
+    <copyright>2015 by lewiswight</copyright>
+    <icon>appicon.png</icon>
+    <persistent-wifi>false</persistent-wifi>
+    <prerendered-icon>false</prerendered-icon>
+    <statusbar-style>default</statusbar-style>
+    <!--<statusbar-hidden>false</statusbar-hidden>-->
+    <fullscreen>false</fullscreen>
+    <!--<navbar-hidden>false</navbar-hidden>-->
+    <analytics>true</analytics>
+    <guid>fb427914-5d55-47e5-a71a-be570df83913</guid>
+    <property name="ti.ui.defaultunit" type="string">system</property>
+    <iphone>
+        <orientations device="iphone">
+            <orientation>Ti.UI.PORTRAIT</orientation>
+        </orientations>
+        <orientations device="ipad">
+            <orientation>Ti.UI.PORTRAIT</orientation>
+        </orientations>
+        <plist>
+            <dict>
+                <key>NSLocationAlwaysUsageDescription</key>
+                <string>
+                    Specify the reason for accessing the user's location information.
+                    This appears in the alert dialog when asking the user for permission to
+                    access their location.
+                </string>
+            </dict>
+        </plist>
+    </iphone>
+    <mobileweb>
+        <precache/>
+        <splash>
+            <enabled>true</enabled>
+            <inline-css-images>true</inline-css-images>
+        </splash>
+        <theme>default</theme>
+    </mobileweb>
+    <modules>
+        <module platform="iphone">ti.map</module>
+        <module platform="android">ti.map</module>
+    </modules>
+    <deployment-targets>
+        <target device="android">true</target>
+        <target device="blackberry">false</target>
+        <target device="ipad">true</target>
+        <target device="iphone">true</target>
+        <target device="mobileweb">true</target>
+        <target device="tizen">false</target>
+    </deployment-targets>
+    <sdk-version>3.5.0.GA</sdk-version>
+    <plugins>
+        <plugin version="1.0">ti.alloy</plugin>
+    </plugins>
+    
+<android xmlns:android="http://schemas.android.com/apk/res/android">
+	<manifest>
+		<!-- The version of the application code. This value needs to be increased everytime newer version of the application is published on the play store -->
+		<uses-sdk android:versionCode="1502250000"/>
+		<!-- This attribute needs to be set in order flurry module to have data reported under that version name -->
+		<uses-sdk android:versionName="2.0"/>
+		<!-- API level that we target -->
+		<uses-sdk android:targetSdkVersion="16"/>
+		<!-- Minimum API level that we support -->
+		<uses-sdk android:minSdkVersion="14"/>
+		<!-- Allows the API to download data from Google Map servers -->
+		<uses-permission android:name="android.permission.INTERNET"/>
+		<!-- Allows applications to access information about networks -->
+		<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+		<!-- Allows the API to cache data -->
+		<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+		<!-- Use GPS for device location -->
+		<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+		<!-- Use Wi-Fi or mobile connection for device location -->
+		<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+		<!-- Allows the API to access Google web-based services -->
+		<uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES"/>
+		<!-- Specify OpenGL ES 2.0 as a requirement -->
+		<uses-feature android:glEsVersion="0x00020000" android:required="true"/>
+		<uses-permission android:name="io.trigger.forge36e5a4702df411e2b5de12313d31f141.permission.MAPS_RECEIVE"/>
+		<permission android:name="io.trigger.forge36e5a4702df411e2b5de12313d31f141.permission.MAPS_RECEIVE" android:protectionLevel="signature"/>
+		<application android:theme="@style/NoActionBar">
+			<meta-data android:name="com.google.android.maps.v2.API_KEY" android:value="AIzaSyBt-btT9ZAu4_BVttAEkja9zAzreXDSu18"/>
+			<activity android:name="org.appcelerator.titanium.TiActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation">
+            </activity>
+		</application>
+	</manifest>
+</android></ti:app>

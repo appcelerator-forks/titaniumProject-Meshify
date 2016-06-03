@@ -1,0 +1,22 @@
+"#container": {
+	width: Ti.UI.FILL,
+	height: Ti.UI.FILL,
+	zIndex: 5000
+},
+"#indicatorBack":{
+	opacity: 0.8,
+	height: '50dp',
+	width: '150dp',
+	borderRadius: 10,
+	backgroundColor: 'black'
+},
+"#indicatorBack[formFactor=tablet]":{
+	height: '70dp',
+	width: '170dp'
+},
+"#activityInd":{
+	color: 'white',
+	message: ' Loading...',
+	zIndex: 10,
+	opacity: 1
+}

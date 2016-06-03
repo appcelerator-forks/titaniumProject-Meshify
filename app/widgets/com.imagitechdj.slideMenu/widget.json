@@ -1,0 +1,15 @@
+{
+	"id": "com.imagitechdj.slideMenu",
+	"name": "Slide Menu",
+	"description" : "Slide Menu widget",
+	"author": "Dilmer Valecillos",
+	"version": "1.0",
+	"copyright":"Copyright (c) 2013 by Imagitech DJ LLC",
+	"license":"Public Domain",
+	"min-alloy-version": "1.0",
+	"min-titanium-version":"2.1",
+	"tags":"",
+	"platforms":"android,ios",
+	"dependencies": {
+	}
+}

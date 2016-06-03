@@ -1,0 +1,47 @@
+<Alloy>
+	<View id="contactMeView">
+		<ScrollView id='scroll'>
+			<View id="mainview">
+				<View id="header">
+					<ImageView id="image"></ImageView>
+					<View id="content">
+						<Label id="title"></Label>
+						<Label class="subtitle" id="subtitle1"></Label>
+						<Label class="subtitle" id="subtitle2"></Label>
+						<Label class="subtitle" id="subtitle3"></Label>
+						<Label class="subtitle" id="subtitle4"></Label>
+					</View>
+				</View>
+				<View id="detail">
+					<Label id="labelInfo" class="lblClass">My Name</Label>
+					<TextField id="nameText" class='tf1'></TextField>
+					<Label id="labelInfo1" class="lblClass">My Phone Number</Label>
+					<TextField id="phoneText" class='tf1'></TextField>
+					<Label id="labelInfo2" class="lblClass">My Email Address</Label>
+					<TextField  id="emailText" class='tf1'></TextField>
+					<Label id="labelInfo3" class="lblClass">Reason For Contacting</Label>
+					<View id="contactingView">
+						<Button id="clickBtn"></Button>
+						<ImageView id="dropdownImg" />
+					</View>
+					<Label id="labelInfo4" class="lblClass">Message/Friends's Information</Label>
+					<TextArea id="messageText"></TextArea>
+					<Button id="submitbtn">Submit</Button>
+				</View>
+			</View>
+		</ScrollView>
+		<View id="infoList">
+			<Button id="donebtn">Done</Button>
+			<Picker id="reasonList">
+				<PickerColumn id="column1">
+					<PickerRow title="Refer a Friend"/>
+					<PickerRow title="Maintenance / Refill"/>
+					<PickerRow title=" Misting System Not working"/>
+					<PickerRow title="Mobile / iMistAway help"/>
+					<PickerRow title="Other"/>
+				</PickerColumn>
+				<!-- Picker shorthand notation -->
+			</Picker>
+		</View>
+	</View>
+</Alloy>

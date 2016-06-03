@@ -1,0 +1,7 @@
+<Alloy>
+	<FooterView>
+		<View id='footerView'>
+			<Label id='footerLabel'>Tap to load more</Label>
+		</View>
+	</FooterView>
+</Alloy>

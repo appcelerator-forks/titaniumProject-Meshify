@@ -1,0 +1,38 @@
+".ptr": {
+    width: Ti.UI.FILL,
+    height: 51,
+    backgroundColor: "#F5F8FA"
+},
+".ptrCenter": {
+    bottom: 11,
+    width: Ti.UI.SIZE,
+    height: Ti.UI.SIZE,
+    visible: false
+},
+".ptrArrow": {
+    left: '8dp',
+    width: '12dp',
+    height: '30dp',  
+    image: WPATH("/images/clean.png")
+},
+".ptrIndicator": {
+    left: '0dp',
+    style: Ti.UI.ActivityIndicatorStyle.DARK
+},
+".ptrIndicator[platform=ios]": {
+    style: Ti.UI.iPhone.ActivityIndicatorStyle.DARK
+},
+".ptrText": {
+    left: '30dp',
+    wordWrap: false,
+    color: "#8899A6",
+    font: {
+        fontSize: '13sp'
+    }
+},
+".ptrLine": {
+    bottom: '0dp',
+    height: '1dp',
+    width: Ti.UI.FILL,
+    backgroundColor: "#E1E8ED",
+}

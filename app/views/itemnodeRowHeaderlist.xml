@@ -1,0 +1,12 @@
+<Alloy>
+	<View id="wrapper">
+		<ImageView id="labelRowDirectionsIcon" />
+		<View id="rowLabelLeft">
+			<Label id="labelRowName"></Label>
+		</View>
+		<ImageView id="labelRowPhoneIcon" />
+		<View id="rowLabelRight">
+			<Label id="labelRowPhone"></Label>
+		</View>
+	</View>
+</Alloy>

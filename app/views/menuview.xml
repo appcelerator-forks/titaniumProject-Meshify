@@ -1,0 +1,47 @@
+<Alloy>
+	<View id="menuView">
+		<View id="menuTopBar">
+			<SearchBar id="searchBar" />
+		</View>
+		<TableView class="menuTable" id="menuTable">
+			<TableViewRow class="tableRow" id="map" name="Menu Item 1">
+				<View id="rowContainer">
+					<View id="rowMap" class="rowIcon"/>
+					<Label id="rowLabel" class="rowLabel">Map</Label>
+				</View>
+			</TableViewRow>
+			<TableViewRow class="tableRow" id="list" name="Menu Item 2">
+				<View id="rowContainer">
+					<View id="rowList" class="rowIcon"/>
+					<Label id="rowLabel" class="rowLabel">List</Label>
+				</View>
+			</TableViewRow>
+<!--			
+			<TableViewRow class="tableRow" id="gateway" name="Menu Item 5">
+				<View id="rowContainer">
+					<View id="rowGateway" class="rowIcon"/>
+					<Label id="rowLabel" class="rowLabel">Activate Gateway</Label>
+				</View>
+			</TableViewRow>
+			<TableViewRow class="tableRow" id="manager" name="Menu Item 6">
+				<View id="rowContainer">
+					<View id="rowManager" class="rowIcon"/>
+					<Label id="rowLabel" class="rowLabel">Customer Manager</Label>
+				</View>
+			</TableViewRow>
+-->			
+			<TableViewRow class="tableRow" id="contact" name="Menu Item 3">
+				<View id="rowContainer">
+					<View id="rowContact" class="rowIcon"/>
+					<Label id="rowLabel" class="rowLabel">Contact Support</Label>
+				</View>
+			</TableViewRow>
+			<TableViewRow class="tableRow" id="logout" name="Menu Item 4">
+				<View id="rowContainer">
+					<View id="rowLogout" class="rowIcon"/>
+					<Label id="rowLabel" class="rowLabel">Log Out</Label>
+				</View>
+			</TableViewRow>
+		</TableView>
+	</View>
+</Alloy>

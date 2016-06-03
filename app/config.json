@@ -1,0 +1,14 @@
+{
+	"global": {}, 
+	"env:development": {}, 
+	"env:test": {}, 
+	"env:production": {}, 
+	"os:android": {},
+	"os:blackberry": {},
+	"os:ios": {},
+	"os:mobileweb": {},
+	"dependencies": {
+		"com.imagitechdj.slideMenu" : "1.0",
+		"nl.fokkezb.pullToRefresh":"1.5.2"
+	}
+}

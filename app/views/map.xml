@@ -1,0 +1,15 @@
+<Alloy>
+	<View id="wrapper">
+		<View id="mapWrapper">
+			<Module id="map" module="ti.map" method="createView" platform="ios,android" />
+			<Button id="zoomToMe" />
+			<View id="closeBtnView">
+				<ImageView id="closeBtnImage"/>
+			</View>
+			<Button id="mapRefreshButton" platform="ios"/>
+		</View>
+		<View id="mapListView">
+			<Require type="view" src="listView" id="list"/>
+		</View>
+	</View>
+</Alloy>

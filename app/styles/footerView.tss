@@ -1,0 +1,14 @@
+"#footerView": {
+	width: Ti.UI.FILL,
+	height: '40dp',
+	backgroundColor: 'white',
+	visible: false
+},
+"#footerLabel": {
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE,
+	color: 'black',
+	font: {
+		fontSize: '16sp'
+	}
+},

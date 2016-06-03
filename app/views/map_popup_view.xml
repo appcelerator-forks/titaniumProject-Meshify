@@ -1,0 +1,6 @@
+<Alloy>
+	<View id="view" borderRadius="10" backgroundColor="red" width="50" height="50">
+		<Label left="20" id="address"/>
+		<Label id="type"/>
+	</View>
+</Alloy>

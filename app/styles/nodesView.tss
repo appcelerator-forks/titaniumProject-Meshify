@@ -1,0 +1,4 @@
+'#nodesMainView': {
+	width : Ti.UI.FILL,
+	height : Ti.UI.FILL,
+}

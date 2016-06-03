@@ -1,0 +1,22 @@
+
+".container" : {
+  
+}
+
+"#cusManagerWrapper" : {
+	layout: "vertical"
+},
+
+".lbsmall" : {
+	font: {
+    
+    	fontSize: '10sp'
+  	},
+}
+
+".lbmedium" : {
+	font: {
+    
+    	fontSize: '14sp'
+  	},
+}

@@ -1,0 +1,385 @@
+<Alloy>
+	<View id="wrapper">
+		<TableView id="table" platform="ios">
+			<Widget id="ptr3" src="nl.fokkezb.pullToRefresh" onRelease="PullLoad" />
+			<TableViewRow>
+				<ScrollableView id="MAScrollView">
+					<View id="page1">
+						<View id="headerView">
+							<Label id="vanityName" />
+							<Label id="ownerName" />
+						</View>
+						<View id="leftRemote">
+							<Label id="remoteLabel" />
+							<View id="mistComponent">
+								<View id="mistWrapper">
+									<ImageView id="mistImage" />
+									<Label id="mistLabel" />
+								</View>
+								<Button id="mist" titleValue="1,r,M" />
+							</View>
+							<View id="stopComponent">
+								<View id="stopWrapper">
+									<ImageView id="stopImage" />
+									<Label id="stopLabel" />
+								</View>
+								<Button id="stop" titleValue="1,r,S" />
+							</View>
+							<View id="skipComponent">
+								<View id="skipWrapper">
+									<ImageView id="skipImage" />
+									<Label id="skipLabel" />
+								</View>
+								<Button id="skip" titleValue="1,r,SM" />
+							</View>
+						</View>
+						<View id="rightStatus">
+							<Label id="statusHeader" />
+							<View id="statusComponent">
+								<View id="statusWrapper">
+									<ImageView id="statusImage" />
+									<Label id="statusLabel" />
+								</View>
+								<Button id="status" titleValue="2,0" />
+							</View>
+							<View id="modeComponent">
+								<View id="modeWrapper">
+									<ImageView id="modeImage" />
+									<Label id="modeLabel" />
+								</View>
+								<Button id="mode" titleValue="2,0" />
+							</View>
+						</View>
+						<View id="contactView">
+							<Label id="contactLabel" />
+							<Button titleValue="3,0" id="contact" />
+						</View>
+						<View id="logoView">
+							<ImageView id="logo" />
+						</View>
+					</View>
+					<View id="page3">
+						<Label id="vanityName3"></Label>
+						<TableView id="table3">
+							<TableViewSection id="statusSection3" headerTitle="System Status">
+								<TableViewRow id="statusRow3">
+									<ImageView id="statusImage3"></ImageView>
+									<Label id="systemStatus3"></Label>
+								</TableViewRow>
+							</TableViewSection>
+							<TableViewSection headerTitle="Mode">
+								<TableViewRow>
+									<Label id="systemTypeLabel3" />
+									<Label id="systemType3" />
+								</TableViewRow>
+								<TableViewRow>
+									<Label id="leakDetectionLabel3" />
+									<Label id="leakDetection3" />
+								</TableViewRow>
+								<TableViewRow>
+									<Label id="systemModeLabel3" />
+									<Label id="systemMode3" />
+								</TableViewRow>
+								<TableViewRow>
+									<Label id="tankLevelLabel3" />
+									<Label id="tankLevel3" />
+								</TableViewRow>
+							</TableViewSection>
+							<TableViewSection headerTitle="Operation Info">
+								<TableViewRow>
+									<Label id="lastMistLabel3" />
+									<Label id="lastMist3" />
+								</TableViewRow>
+								<TableViewRow>
+									<Label id="nextMistLabel3" />
+									<Label id="nextMist3" />
+								</TableViewRow>
+							</TableViewSection>
+							<TableViewSection headerTitle="Communication Info">
+								<TableViewRow>
+									<Label id="lastCommLabel3" />
+									<Label id="lastComm3" />
+								</TableViewRow>
+								<TableViewRow>
+									<Label id="signalLabel3" />
+									<Label id="signal3" />
+								</TableViewRow>
+								<TableViewRow>
+									<Label id="lastGatewayLabel3" />
+									<Label id="lastGateway3" />
+								</TableViewRow>
+								<TableViewRow>
+									<Label id="macAddressLabel3" />
+									<Label id="macAddress3" />
+								</TableViewRow>
+							</TableViewSection>
+						</TableView>
+					</View>
+					<View backgroundColor="white" height="100%" id="page4">
+            
+			            <Label id="vanityName4"></Label>
+			            
+			            <ListView width="100%" id="table4">
+			            	<Templates>
+				                <!-- main template for displaying the list items -->
+				                <ItemTemplate  id="template1" name="template1"  class="template1">
+				                    <Label id="ctLabel" bindId="ctLabel" class="ct"></Label>	
+				                	<Label id="time1" bindId="time1" class="time"></Label>	
+				                	<Label  id="duration1" bindId="duration1" class="duration"></Label>
+
+				                </ItemTemplate>
+				                <!-- dummy template for displaying space -->
+				                <ItemTemplate  id="template2" name="template2"  class="template2">
+				                    <View height="40dp"></View>
+				                </ItemTemplate>
+				            </Templates>
+		
+				            <ListSection id="ScheduleTable" headerTitle="Misting Schedule">
+				            	<ListItem template="template1" />
+				            </ListSection>
+				        </ListView>
+				        
+		            </View>
+
+				</ScrollableView>
+			</TableViewRow>
+		</TableView>
+
+		<!-- This is for android. Scrollable view can not be put in table view component. Pull to refresh is not working on android at the moment -->
+		<ScrollableView id="MAScrollView" platform="android">
+			<View id="page1">
+				<View id="headerView">
+					<Label id="vanityName" />
+					<Label id="ownerName" />
+				</View>
+				<View id="leftRemote">
+					<Label id="remoteLabel" />
+					<View id="mistComponent">
+						<View id="mistWrapper">
+							<ImageView id="mistImage" />
+							<Label id="mistLabel" />
+						</View>
+						<Button id="mist" titleValue="1,r,M" />
+					</View>
+					<View id="stopComponent">
+						<View id="stopWrapper">
+							<ImageView id="stopImage" />
+							<Label id="stopLabel" />
+						</View>
+						<Button id="stop" titleValue="1,r,S" />
+					</View>
+					<View id="skipComponent">
+						<View id="skipWrapper">
+							<ImageView id="skipImage" />
+							<Label id="skipLabel" />
+						</View>
+						<Button id="skip" titleValue="1,r,SM" />
+					</View>
+				</View>
+				<View id="rightStatus">
+					<Label id="statusHeader" />
+					<View id="statusComponent">
+						<View id="statusWrapper">
+							<ImageView id="statusImage" />
+							<Label id="statusLabel" />
+						</View>
+						<Button id="status" titleValue="2,0" />
+					</View>
+					<View id="modeComponent">
+						<View id="modeWrapper">
+							<ImageView id="modeImage" />
+							<Label id="modeLabel" />
+						</View>
+						<Button id="mode" titleValue="2,0" />
+					</View>
+				</View>
+				<View id="contactView">
+					<Label id="contactLabel" />
+					<Button titleValue="3,0" id="contact" />
+				</View>
+				<View id="logoView">
+					<ImageView id="logo" />
+				</View>
+			</View>
+			<View id="page3">
+				<Label id="vanityName3"></Label>
+				<TableView id="table3">
+					<TableViewSection id="statusSection3" headerTitle="System Status">
+						<TableViewRow id="statusRow3">
+							<ImageView id="statusImage3"></ImageView>
+							<Label id="systemStatus3"></Label>
+						</TableViewRow>
+					</TableViewSection>
+					<TableViewSection headerTitle="Mode">
+						<TableViewRow>
+							<Label id="systemTypeLabel3" />
+							<Label id="systemType3" />
+						</TableViewRow>
+						<TableViewRow>
+							<Label id="leakDetectionLabel3" />
+							<Label id="leakDetection3" />
+						</TableViewRow>
+						<TableViewRow>
+							<Label id="systemModeLabel3" />
+							<Label id="systemMode3" />
+						</TableViewRow>
+						<TableViewRow>
+							<Label id="tankLevelLabel3" />
+							<Label id="tankLevel3" />
+						</TableViewRow>
+					</TableViewSection>
+					<TableViewSection headerTitle="Operation Info">
+						<TableViewRow>
+							<Label id="lastMistLabel3" />
+							<Label id="lastMist3" />
+						</TableViewRow>
+						<TableViewRow>
+							<Label id="nextMistLabel3" />
+							<Label id="nextMist3" />
+						</TableViewRow>
+					</TableViewSection>
+					<TableViewSection headerTitle="Communication Info">
+						<TableViewRow>
+							<Label id="lastCommLabel3" />
+							<Label id="lastComm3" />
+						</TableViewRow>
+						<TableViewRow>
+							<Label id="signalLabel3" />
+							<Label id="signal3" />
+						</TableViewRow>
+						<TableViewRow>
+							<Label id="lastGatewayLabel3" />
+							<Label id="lastGateway3" />
+						</TableViewRow>
+						<TableViewRow>
+							<Label id="macAddressLabel3" />
+							<Label id="macAddress3" />
+						</TableViewRow>
+					</TableViewSection>
+				</TableView>
+			</View>
+			<View backgroundColor="white" height="100%" id="page4">
+            
+	            <Label id="vanityName4"></Label>
+	            
+	            <ListView width="100%" id="table4">
+	            	<Templates>
+		                <!-- main template for displaying the list items -->
+		                <ItemTemplate  id="template1" name="template1"  class="template1">
+		                    <Label id="ctLabel" bindId="ctLabel" class="ct"></Label>	
+		                	<Label id="time1" bindId="time1" class="time"></Label>	
+		                	<Label  id="duration1" bindId="duration1" class="duration"></Label>
+
+		                </ItemTemplate>
+		                <!-- dummy template for displaying space -->
+		                <ItemTemplate  id="template2" name="template2"  class="template2">
+		                    <View height="40dp"></View>
+		                </ItemTemplate>
+		            </Templates>
+
+		            <ListSection id="ScheduleTable" headerTitle="Misting Schedule">
+		            	<ListItem template="template1" />
+		            </ListSection>
+		        </ListView>
+		        
+            </View>
+
+		</ScrollableView>
+		<View zIndex="102" id="infoList">
+			<Button id="savebtn">Save</Button>
+			<Button id="closebtn">Cancel</Button>
+			<Picker top="25dp" id="modeList"  selectionIndicator="true" useSpinner="true">
+				<PickerColumn id="column1">
+					<PickerRow title="OFF"/>
+					<PickerRow title="REM ONLY"/>
+					<PickerRow title="AUTO EVERYDAY"/>
+					<PickerRow title="AUTO CUSTOM"/>
+				</PickerColumn>
+				<!-- Picker shorthand notation -->
+			</Picker>
+		</View>
+		
+		<View zIndex="103" id="timeList">
+    		<Button id="timesavebtn">Save</Button>
+    		<Button id="timeclosebtn">Cancel</Button>
+    		<Label id="tod" text="Time of Day"></Label>
+    		<Label id="sec" text="Mist Seconds"></Label>
+			<Picker top="25dp" id="timeofday"  selectionIndicator="true" useSpinner="true">
+	            <PickerColumn  width="45dp" id="column1">
+	                <PickerRow title="1"/>
+	                <PickerRow title="2"/>
+	                <PickerRow title="3"/>
+	                <PickerRow title="4"/>
+	                <PickerRow title="5"/>
+	                <PickerRow title="6"/>
+	                <PickerRow title="7"/>
+	                <PickerRow title="8"/>
+	                <PickerRow title="9"/>
+	                <PickerRow title="10"/>
+	                <PickerRow title="11"/>
+	                <PickerRow title="12"/>
+	            </PickerColumn>
+	            <PickerColumn width="45dp"  id="column2">
+	            	<PickerRow title="00"/>
+	                <PickerRow title="05"/>
+	                <PickerRow title="10"/>
+	                <PickerRow title="15"/>
+	                <PickerRow title="20"/>
+	                <PickerRow title="25"/>
+	                <PickerRow title="30"/>
+	                <PickerRow title="35"/>
+	                <PickerRow title="40"/>
+	                <PickerRow title="45"/>
+	                <PickerRow title="50"/>
+	                <PickerRow title="55"/>
+	                
+	            </PickerColumn>
+	            <PickerColumn width="90dp" id="column3">
+	                <PickerRow title="AM"/>
+	                <PickerRow title="PM"/>			            
+	            </PickerColumn>
+	            <PickerColumn width="60dp" id="column4">
+	            	<PickerRow title="0"/>
+	                <PickerRow title="5"/>
+	                <PickerRow title="10"/>
+	                <PickerRow title="15"/>
+	                <PickerRow title="20"/>
+	                <PickerRow title="25"/>
+	                <PickerRow title="30"/>
+	                <PickerRow title="35"/>
+	                <PickerRow title="40"/>
+	                <PickerRow title="45"/>
+	                <PickerRow title="50"/>
+	                <PickerRow title="55"/>
+	                <PickerRow title="60"/>
+	                <PickerRow title="65"/>
+	                <PickerRow title="70"/>
+	                <PickerRow title="75"/>
+	                <PickerRow title="80"/>
+	                <PickerRow title="85"/>
+	                <PickerRow title="90"/>
+	                <PickerRow title="95"/>
+	                <PickerRow title="100"/>
+	                <PickerRow title="105"/>
+	                <PickerRow title="110"/>
+	                <PickerRow title="115"/>
+	                <PickerRow title="120"/>
+	                <PickerRow title="125"/>
+	                <PickerRow title="130"/>
+	                <PickerRow title="135"/>
+	                <PickerRow title="140"/>
+	                <PickerRow title="145"/>
+	                <PickerRow title="150"/>
+	                <PickerRow title="155"/>
+	                <PickerRow title="160"/>
+	                <PickerRow title="165"/>
+	                <PickerRow title="170"/>
+	                <PickerRow title="175"/>
+	                <PickerRow title="180"/>
+	            </PickerColumn>
+	            
+	        </Picker>
+		</View>
+	
+	</View>
+</Alloy>

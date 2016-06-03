@@ -1,0 +1,3 @@
+<Alloy>
+	<Button backgroundFocusedColor="black" top="50dp" backgroundColor="green" width="300dp" height="100dp" id="openGate" titleid="gate.activate" class="gate-activate">BOOM!</Button>
+</Alloy>

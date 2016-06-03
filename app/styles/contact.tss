@@ -1,0 +1,143 @@
+"#contactMeView": {
+	left: Ti.UI.FILL,
+	right: Ti.UI.FILL,
+	backgroundColor: 'white'
+},
+"#scroll": {
+	showVerticalScrollIndicator: true,
+	showHorizontalScrollIndicator: false
+},
+"#mainview":{
+	top: '0dp',
+	width: '100%',
+	backgroundColor: 'white',
+	layout: 'vertical'
+},
+"#header":{
+	top: '10dp',
+	height: Ti.UI.SIZE
+},
+"#image":{
+	top: '10dp',
+	left: '10dp',
+	width: '100dp'
+},
+"#content":{
+	left: '110dp',
+	width: '250dp',
+	height: Ti.UI.SIZE,
+	layout: 'vertical'
+},
+"#title":{
+	top: '10dp',
+	left: '10dp',
+	font:{
+		fontSize: '20sp'
+	},
+	color: 'black'
+},
+".subtitle":{
+	left: '10dp',
+	font:{
+		fontSize: '15sp'
+	},
+	color: 'black'
+},
+"#subtitle1":{},
+"#subtitle2":{},
+"#subtitle3":{},
+"#subtitle4":{},
+"#detail":{
+	height: Ti.UI.SIZE,
+	layout: 'vertical'
+},
+".lblClass":{
+	top: '3dp',
+	left: '10dp',
+	color: 'black',
+	font:{
+		fontSize: '20sp'
+	}
+},
+".tf1":{
+	top: '2dp',
+	left: '10dp',
+	right: '10dp',
+	height: '40dp',
+	color: 'black',
+	borderColor: '#ccc',
+	borderRadius: '2dp',
+	borderWidth: '1dp'
+},
+"#labelInfo":{},
+"#labelInfo1":{},
+"#labelInfo2":{},
+"#labelInfo3":{},
+"#labelInfo4":{},
+"#nameText": {},
+"#phoneText": {},
+"#emailText": {},
+"#messageText":{
+	left: '10dp',
+	right: '10dp',
+	height: '150dp',
+	color: 'black',
+	borderColor: '#ccc',
+	borderRadius: '2dp',
+	borderWidth: '1dp',
+},
+"#contactingView":{
+	top: '0dp',
+	left: '0dp',
+	right: '0dp',
+	height: '40dp',	
+},
+"#clickBtn":{
+	top: '10dp',
+	left: '10dp',
+	right: '10dp',
+	height: '30dp',	
+	title: 'Refer a  Friend',
+	color: 'black',
+	backgroundColor: 'white',
+	borderColor: '#ccc',
+	borderRadius: '2dp',
+	borderWidth: '1dp'
+},
+"#dropdownImg":{
+	top: '20dp',
+	left: '20dp',
+	height: '10dp',
+	image: '/images/dropdown.png'
+},
+"#submitbtn":{
+	top: '10dp',
+	bottom: "10dp",
+	left: '10dp',
+	right: '10dp',
+	height: '30dp',
+	title: 'Submit',
+	color: 'black',
+	backgroundColor: '#ccc',
+	borderColor: '#ccc',
+	borderRadius: '2dp',
+	borderWidth: '1dp'
+},
+"#infoList":{
+	top: Alloy.CFG.height,
+	height: Alloy.CFG.halfHeight,
+	zIndex: 102,
+	backgroundColor: "white",
+	visible: false,
+},
+"#reasonList": {
+	top: "50dp",
+	selectionIndicator: true,
+	useSpinner: true
+},
+"#donebtn":{
+	top: "5pdp",
+	left: "10dp",
+	height: "40dp",
+	zIndex: "99",
+}

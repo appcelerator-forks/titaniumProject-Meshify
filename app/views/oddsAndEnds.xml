@@ -1,0 +1,6 @@
+<Alloy>
+	<Window>
+		<Require src="addAddress" id="addAddress" />
+		<Require src="map" id="map" />
+	</Window>
+</Alloy>

@@ -1,0 +1,74 @@
+"#menuView":{
+	layout: 'vertical'
+},
+"#menuTopBar":{
+	width: Ti.UI.FILL,
+	height: "60dp",
+	layout: 'horizontal'
+},
+"#menuTopBar[platform=ios]":{
+	backgroundImage: "/slideMenu/images/gray_texture_bg.png"
+},
+"#menuTopBar[platform=android]":{
+	backgroundColor: '#585858'
+},
+"#searchBar": {
+	top: '20dp',
+	width: '75%',
+	height: '40dp',
+	backgroundImage: '/slideMenu/images/row_bg.png',
+	showCancel: false
+},
+"#searchBar[platform=android]": {
+	width: '65%'
+},
+".menuTable[platform=ios]":{
+	backgroundImage: '/slideMenu/images/gray_texture_bg.png',
+	separatorStyle: Ti.UI.iPhone.TableViewSeparatorStyle.NONE
+},
+".menuTable[platform=android]":{
+	backgroundColor: '#585858'
+},
+".tableRow":{
+	height: '54dp',
+	backgroundColor: 'transparent',
+	backgroundImage: '/slideMenu/images/row_bg.png',
+	selectedBackgroundColor: '#AFAFAF'
+},
+"#rowContainer":{
+	height: '30dp',
+	layout: 'horizontal'
+},
+".rowIcon":{
+	left: '5dp',
+	top: '5dp',
+	width: "24dp",
+	height: "24dp"
+},
+"#rowMap":{
+	backgroundImage: '/images/map.png'
+},
+"#rowList":{
+	backgroundImage: '/images/list.png'
+},
+"#rowGateway":{
+	backgroundImage: '/images/gateway.png'
+},
+"#rowManager":{
+	backgroundImage: '/images/users.png'
+},
+"#rowContact":{
+	backgroundImage: '/images/contact.png'
+},
+"#rowLogout":{
+	backgroundImage: '/images/logout.png'
+},
+".rowLabel":{
+	top: '7dp',
+	left: '10dp',
+	height: "20dp",
+	font:{
+		fontSize: "16sp"
+	},
+	color: "lightGray"
+}

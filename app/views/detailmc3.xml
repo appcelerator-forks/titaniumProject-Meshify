@@ -1,0 +1,47 @@
+<Alloy>
+	<View id="mc3d" class="container">
+
+		<ScrollView id="scrollId">
+			<Label id="label1" />
+			<Label id="label2" />
+			<View id="addressView">
+				<ImageView id = "imageAdd"></ImageView>
+				<View id="sideView">
+					<Label id="address1" />
+					<Label id="address2" />
+					<Label id="address3" />
+				</View>
+			</View>
+			<TableView id = "sample"></TableView>
+			<View id="mistView">
+				<Label id="mistLbl" />
+			</View>
+			<View class="line"/>
+			<View id="stopView">
+				<View id="stopVieww">
+					<Label id="stopLbl" />
+					<View class="lineViewRight"/>
+				</View>
+				<View id="skipView">
+					<Label id="skipLbl" />
+					<View class="lineViewLeft"/>
+				</View>
+			</View>
+			<View class="line"/>
+			<View id="clearChargeView">
+				<View id="clearError">
+					<Label id="clearLbl" />
+					<View class="lineViewRight"/>
+				</View>
+				<View id="chargeView">
+					<Label id="chargeLbl" />
+					<View class="lineViewLeft"/>
+				</View>
+			</View>
+			<View class="line"/>
+			<View id="inspectView">
+				<Label id="inspectLbl" />
+			</View>
+		</ScrollView>
+	</View>
+</Alloy>

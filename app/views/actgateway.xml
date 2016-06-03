@@ -1,0 +1,241 @@
+<Alloy>
+	<View class="container">
+		<ScrollableView id="actgatewayscrollview">	
+			<View id="actGatewayWrapper">
+				<View height="50dp" >
+					<Label text="1. Activate Gateway" />
+				</View>
+				<ImageView id="gatewayImg" />			
+			</View>
+		
+			<View id="actGatewayWrapper">
+				<View height="50dp" >
+					<Label text="2. Select Gateway to Install" />
+				</View>
+				<View height="Ti.UI.FILL" backgroundColor="white" layout="vertical">
+					<SearchBar id="searchgatewayBar" hintText="Search"  />
+					<Label id="lb1" />
+					<Label id="lb2" />
+					<View height="Ti.UI.FILL" backgroundColor="white" height="30dp">
+						<Label text="MAC ADDRESS" color="gray" font="{ fontSize: '24sp'}" left="30dp" />
+						<Label text="PAN ID" color="gray" font="{ fontSize: '24sp'}" right="50dp" />
+					</View>
+				
+					<View backgroundColor="#dbdbdb" height="1dp" left="15dp" />
+					
+					<ListView id="gatewaylistView" defaultItemTemplate="itemmaclist"  onItemclick="openItems">
+						<Templates>
+							<ItemTemplate name="itemmaclist" class="itemmaclist" bindId="itemmaclist">
+								<View id="wrapper" bindId="wrapper">
+									<View id="macAddRow" bindId="macAddRow">
+										<Label id="macAdd" bindId="macAdd" />
+										<Label id="panID" bindId="panID" />
+										<ImageView right='20dp' top='20dp' height="10dp"  image="/images/next.png" />
+									</View>
+								</View>
+							</ItemTemplate>						
+						</Templates>
+						
+						<ListSection id="MacTable" headerTitle="">
+			            	
+			            </ListSection>
+					</ListView>
+					
+					
+		
+				</View>
+			</View>
+<!--
+	Page 3. 
+-->			
+			<View id="actGatewayWrapper">
+				<View height="50dp" >
+					<Label text="3. Associate Gateway with Customer" />
+				</View>
+				<ScrollView id="assGateNewCusView" height=Ti.UI.FILL backgroundColor="white" layout="vertical">
+					<Label text="PERSONAL DETAILS" class="lbmedium" left="5dp" top="20dp" />
+					<View id="cusCompany3Btn" height="30dp" top="10dp">
+						<TextField id="cusCompany3" hintText="Company" editable=false class="lbmedium" paddingLeft="10dp" width="95%" height="25dp" borderWidth="1dp" borderRadius="5dp" borderColor="#bebebe" />
+						<ImageView top="10dp" right="20dp" height="10dp" image="/images/down.png" />
+					</View>
+					<TextField id="cusLastName3" hintText="Last Name" class="lbmedium" paddingLeft="10dp" top="10dp" width="95%" height="25dp" borderWidth="1dp" borderRadius="5dp" borderColor="#bebebe" />
+					<TextField id="cusFirstName3" hintText="First Name" class="lbmedium" paddingLeft="10dp" top="10dp" width="95%" height="25dp" borderWidth="1dp" borderRadius="5dp" borderColor="#bebebe" />
+					<TextField id="cusPhone3" hintText="Contact Phone" class="lbmedium" paddingLeft="10dp" top="10dp" width="95%" height="25dp" borderWidth="1dp" borderRadius="5dp" borderColor="#bebebe" />
+					
+					<Label text="AUTHENTICATION DETAILS" class="lbmedium" left="5dp" top="20dp" />
+					<TextField id="" hintText="Email" class="lbmedium" paddingLeft="10dp" top="10dp" width="95%" height="25dp" borderWidth="1dp" borderRadius="5dp" borderColor="#bebebe" />
+					<View id="cusRole3Btn" height="30dp" top="10dp">
+						<TextField id="cusRole3" hintText="Select a Role" editable=false class="lbmedium" paddingLeft="10dp" width="95%" height="25dp" borderWidth="1dp" borderRadius="5dp" borderColor="#bebebe" />
+						<ImageView top="10dp" right="20dp" height="10dp" image="/images/down.png" />
+					</View>
+										
+					<Label text="ADDRESS DETAILS" class="lbmedium" left="5dp" top="20dp" />
+					<TextField id="cusAdd3" hintText="Address" class="lbmedium" paddingLeft="10dp" top="10dp" width="95%" height="25dp" borderWidth="1dp" borderRadius="5dp" borderColor="#bebebe" />
+					<TextField id="cusCity3" hintText="City" class="lbmedium" paddingLeft="10dp" top="10dp" width="95%" height="25dp" borderWidth="1dp" borderRadius="5dp" borderColor="#bebebe" />
+					<View id="cusState3Btn" height="30dp" top="10dp">
+						<TextField id="cusState3" hintText="State" editable=false class="lbmedium" paddingLeft="10dp" width="95%" height="25dp" borderWidth="1dp" borderRadius="5dp" borderColor="#bebebe" />
+						<ImageView top="10dp" right="20dp" height="10dp" image="/images/down.png" />
+					</View>
+					<View id="cusCountryBtn" height="30dp" top="10dp">
+						<TextField id="cusCountry3" hintText="Country" editable=false class="lbmedium" paddingLeft="10dp" width="95%" height="25dp" borderWidth="1dp" borderRadius="5dp" borderColor="#bebebe" />
+						<ImageView top="10dp" right="20dp" height="10dp" image="/images/down.png" />
+					</View>
+					<TextField id="cusZip3" hintText="Zip" class="lbmedium" paddingLeft="10dp" top="10dp" width="95%" height="25dp" borderWidth="1dp" borderRadius="5dp" borderColor="#bebebe" />
+					<Button id="findTimezone" title="Find Timezone" font="{ fontSize: '10sp'}" right="10dp" top="10dp"></Button>
+					<View id="cusTimezone3Btn" height="30dp" top="10dp">
+						<TextField id="cusTimezone3" hintText="TimeZone" editable=false class="lbmedium" paddingLeft="10dp" width="95%" height="25dp" borderWidth="1dp" borderRadius="5dp" borderColor="#bebebe" />
+						<ImageView top="10dp" right="20dp" height="10dp" image="/images/down.png" />
+					</View>
+										
+					<View height="75dp" top="30dp" backgroundColor="#bebebe">
+						<Button id="continueBtn3" class="lbmedium" borderRadius="5dp" backgroundColor="white" width="80%" height="40dp" top="20dp">Continue</Button>
+					</View>
+				</ScrollView>
+				<View id="assGateExtCusView" height=Ti.UI.FILL backgroundColor="white" layout="vertical">
+					<SearchBar id="SearchCustomer" hintText="Search"  />
+					
+					<TableView id="existingCustomerTable">
+			            
+			        </TableView>
+				</View>
+				
+			</View>
+			
+<!--
+	Page 4.
+-->				
+			<View id="actGatewayWrapper">
+				<View height="50dp" >
+					<Label text="4. Location Details" />
+				</View>
+				<ScrollView height=Ti.UI.FILL backgroundColor="white" layout="vertical">
+					<View top="5dp" height="24dp">
+						<Label text="GATEWAY" class="lbmedium" left="10dp" />
+						<Label id="gatewayIDlb" class="lbmedium" color="#bebebe" right="10dp"/>
+					</View>
+					
+					<View top="5dp" width="95%" height="1dp" backgroundColor="#bebebe" />
+					
+					<TextField id="locName" hintText="Location Name" class="lbmedium" paddingLeft="10dp" top="10dp" width="95%" height="25dp" borderWidth="1dp" borderRadius="5dp" borderColor="#bebebe" />
+					<TextField id="locNote" hintText="Location Notes" class="lbmedium" paddingLeft="10dp" top="10dp" width="95%" height="120dp" borderWidth="1dp" borderRadius="5dp" borderColor="#bebebe" />
+					<View height="40dp">
+						<TextField id="cusGroup1" hintText="Custom Group 1" textAlign="Titanium.UI.TEXT_ALIGNMENT_CENTER" class="lbmedium" paddingLeft="10dp" top="10dp" width="95%" height="25dp" borderWidth="1dp" borderRadius="5dp" borderColor="#bebebe" />
+						<ImageView top="18dp" right="20dp" height="10dp" image="/images/down.png" />
+					</View>
+					<View height="40dp">
+						<TextField id="cusGroup2" hintText="Custom Group 2" textAlign="Titanium.UI.TEXT_ALIGNMENT_CENTER" class="lbmedium" paddingLeft="10dp" top="10dp" width="95%" height="25dp" borderWidth="1dp" borderRadius="5dp" borderColor="#bebebe" />
+						<ImageView top="18dp" right="20dp" height="10dp" image="/images/down.png" />
+					</View>
+					
+					<View top="10dp" width="95%" height="1dp" backgroundColor="#bebebe" />
+						
+					<View id="cusAddBtn" top="10dp" height="20dp">
+						<ImageView id="cusAddBtnImg" top="0dp" left="20dp" height="20dp" image="/images/checkbox-checked.png" />
+						<Label text="Use the customer's address for this gateway's location." class="lbsmall" left="45dp" height="30dp" />
+					</View>
+					
+					<View id="cusAddView" backgroundColor="white" width=Ti.UI.FILL height="0dp" layout="vertical" visible="false">
+						<TextField id="cusAdd" hintText="Address" class="lbmedium" paddingLeft="10dp" top="10dp" width="85%" height="25dp" borderWidth="1dp" borderRadius="5dp" borderColor="#bebebe" />
+						<TextField id="cusCity" hintText="City" class="lbmedium" paddingLeft="10dp" top="10dp" width="85%" height="25dp" borderWidth="1dp" borderRadius="5dp" borderColor="#bebebe" />
+						<View height="40dp">
+							<TextField id="cusState" hintText="State" class="lbmedium" paddingLeft="10dp" top="10dp" width="85%" height="25dp" borderWidth="1dp" borderRadius="5dp" borderColor="#bebebe" />
+							<ImageView top="18dp" right="30dp" height="10dp" image="/images/down.png" />
+						</View>
+						<View height="40dp">
+							<TextField id="cusCountry" hintText="Country" class="lbmedium" paddingLeft="10dp" top="10dp" width="85%" height="25dp" borderWidth="1dp" borderRadius="5dp" borderColor="#bebebe" />
+							<ImageView top="18dp" right="30dp" height="10dp" image="/images/down.png" />
+						</View>
+						<TextField id="cusZip" hintText="Zip" class="lbmedium" paddingLeft="10dp" top="10dp" width="85%" height="25dp" borderWidth="1dp" borderRadius="5dp" borderColor="#bebebe" />
+						<Button id="findTimezone" title="Find Timezone" font="{ fontSize: '10sp'}" right="30dp" top="10dp"></Button>
+						<View height="40dp">
+							<TextField id="cusTimezone" hintText="Timezone" class="lbmedium" paddingLeft="10dp" top="10dp" width="85%" height="25dp" borderWidth="1dp" borderRadius="5dp" borderColor="#bebebe" />
+							<ImageView top="18dp" right="30dp" height="10dp" image="/images/down.png" />
+						</View>
+					</View>
+										
+					<View height="75dp" top="47dp" backgroundColor="#bebebe">
+						<Button id="actGate" class="lbmedium" borderRadius="5dp" backgroundColor="white" width="80%" height="40dp" top="20dp">Activate Gateway</Button>
+					</View>
+				</ScrollView>
+				
+			</View>
+
+<!--
+	Page 5.
+-->			
+			<View id="actGatewayWrapper">
+				<View height="50dp" >
+					<Label text="Activating Gateway" />
+				</View>
+				<View backgroundColor="white" layout="vertical">
+					<Label top="20dp" font="{ fontSize: '100sp'}" textAlign="center" text="5:00" height="100dp"  />
+					<Label text="Nodes found: 0" textAlign="center" color="gray" font="{ fontSize: '24sp'}" right="50dp" />
+				</View>
+			</View>
+			
+		</ScrollableView>
+		
+		
+		<View id="linkCustomerSubView" backgroundColor="#bac0c9"  top="100%" width="Ti.UI.Fill" height="34%" layout="vertical">
+			<Label top="20dp" width="80%" font="{ fontSize: '16sp'}" textAlign="center" text="Associate this gateway with either a new or existing customer" />
+			<Button id="newCustomer" borderRadius="5dp" backgroundColor="white" width="80%" top="20dp">New Customer</Button>
+			<Button id="exiCustomer" borderRadius="5dp" backgroundColor="white" width="80%" top="15dp">Existing Customer</Button>
+			
+		</View>
+		
+		<View id="CountryPickerCtrl"  backgroundColor="#bac0c9"  top="100%" width="Ti.UI.Fill" height="40%">
+			<Picker id="CountryPickerList">
+				<PickerColumn id="column1">
+					
+				</PickerColumn>
+			</Picker>
+		</View>
+		
+		<View id="StatePickerCtrl"  backgroundColor="#bac0c9"  top="100%" width="Ti.UI.Fill" height="40%">
+			<Picker id="StatePickerList">
+				<PickerColumn id="column1">
+					
+				</PickerColumn>
+			</Picker>
+		</View>
+		
+		<View id="ZonePickerCtrl"  backgroundColor="#bac0c9"  top="100%" width="Ti.UI.Fill" height="40%">
+			<Picker id="ZonePickerList">
+				<PickerColumn id="column1">
+					
+				</PickerColumn>
+			</Picker>
+		</View>
+		
+		<View id="CompanyPickerCtrl"  backgroundColor="#bac0c9"  top="100%" width="Ti.UI.Fill" height="40%">
+			<Picker id="CompanyPickerList">
+				<PickerColumn id="column1">
+					
+				</PickerColumn>
+			</Picker>
+		</View>
+		
+		<View id="RolePickerCtrl"  backgroundColor="#bac0c9"  top="100%" width="Ti.UI.Fill" height="40%">
+			<Picker id="RolePickerList">
+				<PickerColumn id="column1">
+					
+				</PickerColumn>
+			</Picker>
+		</View>
+		
+		<View id="CusGroupPickerCtrl"  backgroundColor="#bac0c9"  top="100%" width="Ti.UI.Fill" height="40%">
+			<Picker id="CusGroupList">
+				<PickerColumn id="column1">
+					<PickerRow title="Timeline"/>
+					<PickerRow title="Flexible"/>
+					<PickerRow title="2 weeks"/>
+					<PickerRow title="1 month"/>
+					<PickerRow title="2 months"/>
+					<PickerRow title="3+ months"/>
+				</PickerColumn>
+			</Picker>
+		</View>
+		
+		
+	</View>
+</Alloy>

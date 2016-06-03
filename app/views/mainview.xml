@@ -1,0 +1,19 @@
+<Alloy>
+	<View id="mainView">
+		<Require type="view" src="menuview" id="menuView"/>
+		<View id="mainViewContainerWrapper">
+			<View id="mainTopBar">
+				<Button id="menuButton" />
+				<Button id="refreshBtn" platform='android'/>
+				<Button id="backBtn" />
+				<ImageView id="toolBarLogo" />
+				<Button id="switchBtn" />
+				<Button id="homebtn" />
+				<Button id="nextbtn" />
+				<Button id="addbtn" />
+				<Button id="cusbackbtn" />
+			</View>
+			<View id="mainViewContainer" />
+		</View>
+	</View>
+</Alloy>

@@ -1,0 +1,72 @@
+'#wrapper': {
+	width: Ti.UI.FILL,
+	height: Ti.UI.FILL,
+	backgroundImage: "/images/mistaway/background.png"
+},
+'#username': {
+	top: '120dp',
+	width: '90%',
+	height: '65dp',
+	keyboardType: Titanium.UI.KEYBOARD_EMAIL,
+	borderStyle: Ti.UI.INPUT_BORDERSTYLE_ROUNDED,
+	hintText: 'Username',
+	color: '#336699'
+},
+'#username[platform=android]': {
+	color: 'black'
+}
+"#password": {
+	top: '220dp',
+	width: '90%',
+	height: '65dp',
+	borderStyle: Ti.UI.INPUT_BORDERSTYLE_ROUNDED,
+	hintText: 'Password',
+	passwordMask: 'true',
+	color: "#336699"
+}
+'#password[platform=android]': {
+	color: 'black'
+}
+'#rememberWrapper': {
+	top: '320dp',
+	width: '90%'
+},
+"#basicSwitch": {
+	left: '0dp',
+	top: '0dp',
+	value: true
+},
+'#basicSwitch[platform=android]': {
+	width: '50dp',
+	title: ''
+},
+'#rememberLabel': {
+	top: '0dp',
+	left: '80dp',
+	text: 'Remember Me?'
+},
+'#rememberLabel[platform=android]': {
+	top: '10dp',
+	color: 'black',
+	font: {
+		fontSize: '16sp'
+	}
+},
+'#loginButton': {
+	title: 'Log In',
+	top: '370dp',
+	width: '100dp',
+	height: '50dp'
+},
+'#loginButton[platform=android]': {
+	top: '390dp',
+	width: '90%',
+	height: Ti.UI.SIZE
+},
+'#forgotPassword': {
+	top: '425dp',
+	title: 'Forgot your password?'
+},
+'#forgotPassword[platform=android]': {
+	top: '465dp'
+}

@@ -1,0 +1,625 @@
+"#listView": {
+	top: 0,
+	width: Ti.UI.FILL,
+	height: Ti.UI.SIZE,
+	separatorColor: 'transparent'
+},
+"#listView[platform=ios]": {
+	height: Ti.UI.FILL
+},
+"#wrapper": {},
+"#wrapper[platform=ios]": {
+	backgroundGradient: {
+		type: 'linear',
+		colors: [
+			{
+				color: '#e2e5e8',
+				offset: 0.0
+			},
+			{
+				color: '#f0f2f3',
+				offset: 1.0
+			}
+		]
+	}
+},
+"#refreshControl[platform=ios]": {
+	tintColor: 'black'
+},
+".itemlist": {
+	width: Ti.UI.FILL,
+	height: '60dp'
+},
+".itemlist[platform=android]": {
+	accessoryType: Titanium.UI.LIST_ACCESSORY_TYPE_DISCLOSURE,
+	backgroundGradient: {
+		type: 'linear',
+		colors: [
+			{
+				color: '#e2e5e8',
+				offset: 0.0
+			},
+			{
+				color: '#f0f2f3',
+				offset: 1.0
+			}
+		]
+	}
+},
+"#nodeColorGate": {
+	left: '10dp',
+	width: '30dp',
+	height: '30dp'
+},
+"#gateRowLeft": {
+	top: '1dp',
+	left: "15%",
+	width: "40%",
+	height: "90dp"
+},
+"#gateRowVanityName": {
+	top: '2dp',
+	left: '0dp',
+	width: Ti.UI.SIZE,
+	height: '30dp',
+	color: '#576996',
+	font: {
+		fontFamily: 'Arial',
+		fontSize: '12sp',
+		fontWeight: 'bold'
+	},
+	minimumFontSize: '12sp',
+	horizontalWrap: false,
+	textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT,
+	wordWrap: false
+},
+"#gateRowAddress1": {
+	top: '16dp',
+	left: '0dp',
+	width: Ti.UI.SIZE,
+	height: '30dp',
+	color: '#576996',
+	font: {
+		fontFamily: 'Arial',
+		fontSize: '12sp',
+		fontWeight: 'bold'
+	},
+	minimumFontSize: '12sp',
+	horizontalWrap: false,
+	textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT,
+	wordWrap: false
+},
+"#gateRowAddress2":{
+	top: '29dp',
+	left: '0dp',
+	width: Ti.UI.SIZE,
+	height: '30dp',
+	color: '#576996',
+	font: {
+		fontFamily: 'Arial',
+		fontSize: '12sp',
+		fontWeight: 'bold'
+	},
+	minimumFontSize: '12sp',
+	horizontalWrap: false,
+	textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT,
+	wordWrap: false
+},
+"#nodecolormc13": {
+	left: '10dp',
+	width: '30dp',
+	height: '30dp'
+},
+"#rowLeft13": {
+	top: '1dp',
+	left: "15%",
+	width: "40%",
+	height: "90dp"
+},
+"#mc13rowVanityName":{
+	top: '2dp',
+	left: '0dp',
+	width: Ti.UI.SIZE,
+	height: '30dp',
+	color: '#576996',
+	font: {
+		fontFamily: 'Arial',
+		fontSize: '12sp',
+		fontWeight: 'bold'
+	},
+	minimumFontSize: '12sp',
+	horizontalWrap: false,
+	textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT,
+	wordWrap: false
+},
+"#mc13rowAddress1":{
+	left: '0dp',
+	top: '16dp',
+	width: Ti.UI.SIZE,
+	height: '30dp',
+	color: '#576996',
+	font: {
+		fontFamily: 'Arial',
+		fontSize: '12sp',
+		fontWeight: 'bold'
+	},
+	minimumFontSize: '12sp',
+	horizontalWrap: false,
+	textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT,
+	wordWrap: false
+},
+"#mc13rowAddress2": {
+	top: '29dp',
+	left: '0dp',
+	width: Ti.UI.SIZE,
+	height: '30dp',
+	color: '#576996',
+	font: {
+		fontFamily: 'Arial',
+		fontSize: '12sp',
+		fontWeight: 'bold'
+	},
+	minimumFontSize: '12sp',
+	horizontalWrap: false,
+	textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT,
+	wordWrap: false
+},
+"#rowRight13": {
+	top: '1dp',
+	right: "0%",
+	width: "40%",
+	height: "90dp"
+},
+"#mc13rowConnected": {
+	top: '2dp',
+	left: '0dp',
+	width: Ti.UI.SIZE,
+	height: '30dp',
+	color: '#576996',
+	font: {
+		fontFamily: 'Arial',
+		fontSize: '12sp',
+		fontWeight: 'bold'
+	},
+	minimumFontSize: '12sp',
+	horizontalWrap: false,
+	textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT,
+	wordWrap: false
+},
+"#mc13rowLevel": {
+	top: '16dp',
+	left: '0dp',
+	width: Ti.UI.SIZE,
+	height: '30dp',
+	color: '#576996',
+	font: {
+		fontFamily: 'Arial',
+		fontSize: '12sp',
+		fontWeight: 'bold'
+	},
+	minimumFontSize: '12sp',
+	horizontalWrap: false,
+	textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT,
+	wordWrap: false
+},
+"#mc13rowLastMist":{
+	top: '29dp',
+	left: '0dp',
+	width: Ti.UI.SIZE,
+	height: '30dp',
+	color: '#576996',
+	font: {
+		fontFamily: 'Arial',
+		fontSize: '10sp',
+		fontWeight: 'bold'
+	},
+	minimumFontSize: '10sp',
+	horizontalWrap: false,
+	textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT,
+	wordWrap: false
+},
+"#nodecolormc13z": {
+	left: '10dp',
+	width: '30dp',
+	height: '30dp'
+},
+"#rowLeft13z":{
+	top: '1dp',
+	left: "15%",
+	height: "90dp",
+	width: "40%"
+},
+"#rowRight13z":{
+	top: '1dp',
+	right: "0%",
+	width: "40%",
+	height: "90dp"
+},
+"#mc13zrowVanityName":{
+	color: '#576996',
+	font: {
+		fontFamily: 'Arial',
+		fontSize: '12sp',
+		fontWeight: 'bold'
+	},
+	minimumFontSize: '12sp',
+	horizontalWrap: false,
+	textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT,
+	wordWrap: false,
+	width: Ti.UI.SIZE,
+	left: '0dp',
+	top: '2dp',
+	height: '30dp'
+},
+"#mc13zrowAddress1":{
+	color: '#576996',
+	font: {
+		fontFamily: 'Arial',
+		fontSize: '12sp',
+		fontWeight: 'bold'
+	},
+	minimumFontSize: '12sp',
+	left: '0dp',
+	horizontalWrap: false,
+	textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT,
+	wordWrap: false,
+	width: Ti.UI.SIZE,
+	top: '16dp',
+	height: '30dp'
+},
+"#mc13zrowAddress2":{
+	color: '#576996',
+	font: {
+		fontFamily: 'Arial',
+		fontSize: '12sp',
+		fontWeight: 'bold'
+	},
+	minimumFontSize: '12sp',
+	left: '0dp',
+	horizontalWrap: false,
+	textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT,
+	wordWrap: false,
+	top: '29dp',
+	width: Ti.UI.SIZE,
+	height: '30dp'
+},
+"#mc13zrowConnected":{
+	color: '#576996',
+	font: {
+		fontFamily: 'Arial',
+		fontSize: '12sp',
+		fontWeight: 'bold'
+	},
+	minimumFontSize: '12sp',
+	left: '0dp',
+	horizontalWrap: false,
+	textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT,
+	wordWrap: false,
+	top: '2dp',
+	width: Ti.UI.SIZE,
+	height: '30dp'
+},
+"#mc13zrowLevel":{
+	color: '#576996',
+	font: {
+		fontFamily: 'Arial',
+		fontSize: '12sp',
+		fontWeight: 'bold'
+	},
+	minimumFontSize: '12sp',
+	left: '0dp',
+	horizontalWrap: false,
+	textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT,
+	wordWrap: false,
+	top: '16dp',
+	width: Ti.UI.SIZE,
+	height: '30dp'
+},
+"#mc13zrowLastMist":{
+	color: '#576996',
+	font: {
+		fontFamily: 'Arial',
+		fontSize: '10sp',
+		fontWeight: 'bold'
+	},
+	minimumFontSize: '10sp',
+	left: '0dp',
+	horizontalWrap: false,
+	textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT,
+	wordWrap: false,
+	top: '29dp',
+	width: Ti.UI.SIZE,
+	height: '30dp'
+},
+"#nodecolormc3": {
+	left: '10dp',
+	width: '30dp',
+	height: '30dp'
+},
+"#rowLeft3": {
+	top: '1dp',
+	left: "15%",
+	height: "90dp",
+	width: "40%"
+},
+"#rowRight3": {
+	top: '1dp',
+	right: "0%",
+	width: "40%",
+	height: "90dp"
+},
+"#mc3rowVanityName":{
+	color: '#576996',
+	font: {
+		fontFamily: 'Arial',
+		fontSize: '12sp',
+		fontWeight: 'bold'
+	},
+	minimumFontSize: '12sp',
+	horizontalWrap: false,
+	textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT,
+	wordWrap: false,
+	width: Ti.UI.SIZE,
+	left: '0dp',
+	top: '2dp',
+	height: '30dp'
+},
+"#mc3rowAddress1":{
+	color: '#576996',
+	font: {
+		fontFamily: 'Arial',
+		fontSize: '12sp',
+		fontWeight: 'bold'
+	},
+	minimumFontSize: '12sp',
+	left: '0dp',
+	horizontalWrap: false,
+	textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT,
+	wordWrap: false,
+	width: Ti.UI.SIZE,
+	top: '16dp',
+	height: '30dp'
+},
+"#mc3rowAddress2":{
+	color: '#576996',
+	font: {
+		fontFamily: 'Arial',
+		fontSize: '12sp',
+		fontWeight: 'bold'
+	},
+	minimumFontSize: '12sp',
+	left: '0dp',
+	horizontalWrap: false,
+	textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT,
+	wordWrap: false,
+	top: '29dp',
+	width: Ti.UI.SIZE,
+	height: '30dp'
+},
+"#mc3rowConnected":{
+	color: '#576996',
+	font: {
+		fontFamily: 'Arial',
+		fontSize: '12sp',
+		fontWeight: 'bold'
+	},
+	minimumFontSize: '12sp',
+	left: '0dp',
+	horizontalWrap: false,
+	textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT,
+	wordWrap: false,
+	top: '2dp',
+	width: Ti.UI.SIZE,
+	height: '30dp'
+},
+"#mc3rowLevel":{
+	color: '#576996',
+	font: {
+		fontFamily: 'Arial',
+		fontSize: '12sp',
+		fontWeight: 'bold'
+	},
+	minimumFontSize: '12sp',
+	left: '0dp',
+	horizontalWrap: false,
+	textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT,
+	wordWrap: false,
+	top: '16dp',
+	width: Ti.UI.SIZE,
+	height: '30dp'
+},
+"#mc3rowLastMist":{
+	color: '#576996',
+	font: {
+		fontFamily: 'Arial',
+		fontSize: '10sp',
+		fontWeight: 'bold'
+	},
+	minimumFontSize: '10sp',
+	left: '0dp',
+	horizontalWrap: false,
+	textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT,
+	wordWrap: false,
+	top: '29dp',
+	width: Ti.UI.SIZE,
+	height: '30dp'
+},
+"#nodecolormc3z": {
+	left: '10dp',
+	width: '30dp',
+	height: '30dp'
+},
+"#rowLeft3z":{
+	top: '1dp',
+	left: "15%",
+	height: "90dp",
+	width: "40%"
+},
+"#rowRight3z":{
+	top: '1dp',
+	right: "0%",
+	width: "40%",
+	height: "90dp"
+},
+"#mc3zrowVanityName":{
+	color: '#576996',
+	font: {
+		fontFamily: 'Arial',
+		fontSize: '12sp',
+		fontWeight: 'bold'
+	},
+	minimumFontSize: '12sp',
+	horizontalWrap: false,
+	textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT,
+	wordWrap: false,
+	width: Ti.UI.SIZE,
+	left: '0dp',
+	top: '2dp',
+	height: '30dp'
+},
+"#mc3zrowAddress1":{
+	color: '#576996',
+	font: {
+		fontFamily: 'Arial',
+		fontSize: '12sp',
+		fontWeight: 'bold'
+	},
+	minimumFontSize: '12sp',
+	left: '0dp',
+	horizontalWrap: false,
+	textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT,
+	wordWrap: false,
+	width: Ti.UI.SIZE,
+	top: '16dp',
+	height: '30dp'
+},
+"#mc3zrowAddress2":{
+	color: '#576996',
+	font: {
+		fontFamily: 'Arial',
+		fontSize: '12sp',
+		fontWeight: 'bold'
+	},
+	minimumFontSize: '12sp',
+	left: '0dp',
+	horizontalWrap: false,
+	textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT,
+	wordWrap: false,
+	top: '29dp',
+	width: Ti.UI.SIZE,
+	height: '30dp'
+},
+"#mc3zrowConnected":{
+	color: '#576996',
+	font: {
+		fontFamily: 'Arial',
+		fontSize: '12sp',
+		fontWeight: 'bold'
+	},
+	minimumFontSize: '12sp',
+	left: '0dp',
+	horizontalWrap: false,
+	textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT,
+	wordWrap: false,
+	top: '2dp',
+	width: Ti.UI.SIZE,
+	height: '30dp'
+},
+"#mc3zrowLevel":{
+	color: '#576996',
+	font: {
+		fontFamily: 'Arial',
+		fontSize: '12sp',
+		fontWeight: 'bold'
+	},
+	minimumFontSize: '12sp',
+	left: '0dp',
+	horizontalWrap: false,
+	textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT,
+	wordWrap: false,
+	top: '16dp',
+	width: Ti.UI.SIZE,
+	height: '30dp'
+},
+"#mc3zrowLastMist":{
+	color: '#576996',
+	font: {
+		fontFamily: 'Arial',
+		fontSize: '10sp',
+		fontWeight: 'bold'
+	},
+	minimumFontSize: '10sp',
+	left: '0dp',
+	horizontalWrap: false,
+	textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT,
+	wordWrap: false,
+	top: '29dp',
+	width: Ti.UI.SIZE,
+	height: '30dp'
+},
+"#nodecolorempty": {
+	left: '10dp',
+	width: '30dp',
+	height: '30dp'
+},
+"#rowLeftempty":{
+	top: '1dp',
+	left: "15%",
+	height: "90dp",
+	width: "80%"
+},
+"#rowRightempty":{
+	top: '1dp',
+	right: "0%",
+	width: "40%",
+	height: "90dp"
+},
+"#emptyrowVanityName":{
+	color: '#576996',
+	font: {
+		fontFamily: 'Arial',
+		fontSize: '12sp',
+		fontWeight: 'bold'
+	},
+	minimumFontSize: '12sp',
+	horizontalWrap: false,
+	textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT,
+	wordWrap: false,
+	width: Ti.UI.SIZE,
+	left: '0dp',
+	top: '2dp',
+	height: '30dp'
+},
+"#emptyrowAddress1":{
+	color: '#576996',
+	font: {
+		fontFamily: 'Arial',
+		fontSize: '12sp',
+		fontWeight: 'bold'
+	},
+	minimumFontSize: '12sp',
+	left: '0dp',
+	horizontalWrap: false,
+	textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT,
+	wordWrap: false,
+	width: Ti.UI.SIZE,
+	top: '16dp',
+	height: '30dp'
+},
+"#emptyrowAddress2":{
+	color: '#576996',
+	font: {
+		fontFamily: 'Arial',
+		fontSize: '12sp',
+		fontWeight: 'bold'
+	},
+	minimumFontSize: '12sp',
+	left: '0dp',	
+	horizontalWrap: false,
+	textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT,
+	wordWrap: false,
+	top: '29dp',
+	width: Ti.UI.SIZE,
+	height: '30dp'
+},
+"#footer": {}

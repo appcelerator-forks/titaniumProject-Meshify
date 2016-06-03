@@ -1,0 +1,11 @@
+android/ATTR_MINIFY=true
+android/ATTR_PROJECT_NAME=Meshify
+android/abi=armeabi
+android/distribute_path=
+android/key_password=
+android/keystore_alias=
+android/keystore_password=
+android/keystore_path=
+android/recent_output=
+android/sdk_version=2.3.3
+eclipse.preferences.version=1

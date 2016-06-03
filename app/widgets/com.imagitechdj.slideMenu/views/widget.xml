@@ -1,0 +1,6 @@
+<Alloy>
+	<View id="wrapperSlideMenu">
+		<View id="drawerMenuView"></View>
+		<View id="drawerMainView"></View>
+	</View>
+</Alloy>

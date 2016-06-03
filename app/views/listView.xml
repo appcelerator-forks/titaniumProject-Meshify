@@ -1,0 +1,95 @@
+<Alloy>
+	<ListView id="listView" defaultItemTemplate="itemgatelist" onItemclick="openDetails">
+		<Templates>
+			<ItemTemplate name="itemgatelist" class="itemlist" bindId="itemgatelist">
+				<View id="wrapper" bindId="wrapper">
+					<ImageView id="nodeColorGate" bindId="nodeColorGate" />
+					<View id="gateRowLeft" bindId="gateRowLeft">
+						<Label id="gateRowVanityName" bindId="gateRowVanityName" />
+						<Label id="gateRowAddress1" bindId="gateRowAddress1" />
+						<Label id="gateRowAddress2" bindId="gateRowAddress2" />
+					</View>
+				</View>
+			</ItemTemplate>
+			<ItemTemplate name="itemmc13list" class="itemlist" bindId="itemmc13list">
+				<View id="wrapper" bindId="wrapper">
+					<ImageView id="nodecolormc13" bindId="nodecolormc13" />
+					<View id="rowLeft13" bindId="rowLeft13">
+						<Label id="mc13rowVanityName" bindId="mc13rowVanityName" />
+						<Label id="mc13rowAddress1" bindId="mc13rowAddress1" />
+						<Label id="mc13rowAddress2" bindId="mc13rowAddress2" />
+					</View>
+					<View id="rowRight13" bindId="rowRight13">
+						<Label id="mc13rowConnected" bindId="mc13rowConnected" />
+						<Label id="mc13rowLevel" bindId="mc13rowLevel" />
+						<Label id="mc13rowLastMist" bindId="mc13rowLastMist" />
+					</View>
+				</View>
+			</ItemTemplate>
+			<ItemTemplate name="itemmc13zlist" class="itemlist" bindId="itemmc13zlist">
+				<View id="wrapper" bindId="wrapper">
+					<ImageView id="nodecolormc13z" bindId="nodecolormc13z" />
+					<View id="rowLeft13z" bindId="rowLeft13z">
+						<Label id="mc13zrowVanityName" bindId="mc13zrowVanityName" />
+						<Label id="mc13zrowAddress1" bindId="mc13zrowAddress1" />
+						<Label id="mc13zrowAddress2" bindId="mc13zrowAddress2" />
+					</View>
+					<View id="rowRight13z" bindId="rowRight13z">
+						<Label id="mc13zrowConnected" bindId="mc13zrowConnected" />
+						<Label id="mc13zrowLevel" bindId="mc13zrowLevel" />
+						<Label id="mc13zrowLastMist" bindId="mc13zrowLastMist" />
+					</View>
+				</View>
+			</ItemTemplate>
+			<ItemTemplate name="itemmc3list" class="itemlist" bindId="itemmc3list">
+				<View id="wrapper" bindId="wrapper">
+					<ImageView id="nodecolormc3" bindId="nodecolormc3" />
+					<View id="rowLeft3" bindId="rowLeft3">
+						<Label id="mc3rowVanityName" bindId="mc3rowVanityName" />
+						<Label id="mc3rowAddress1" bindId="mc3rowAddress1" />
+						<Label id="mc3rowAddress2" bindId="mc3rowAddress2" />
+					</View>
+					<View id="rowRight3" bindId="rowRight3">
+						<Label id="mc3rowConnected" bindId="mc3rowConnected" />
+						<Label id="mc3rowLevel" bindId="mc3rowLevel" />
+						<Label id="mc3rowLastMist" bindId="mc3rowLastMist" />
+					</View>
+				</View>
+			</ItemTemplate>
+			<ItemTemplate name="itemmc3zlist" class="itemlist" bindId="itemmc3zlist">
+				<View id="wrapper" bindId="wrapper">
+					<ImageView id="nodecolormc3z" bindId="nodecolormc3z" />
+					<View id="rowLeft3z" bindId="rowLeft3z">
+						<Label id="mc3zrowVanityName" bindId="mc3zrowVanityName" />
+						<Label id="mc3zrowAddress1" bindId="mc3zrowAddress1" />
+						<Label id="mc3zrowAddress2" bindId="mc3zrowAddress2" />
+					</View>
+					<View id="rowRight3z" bindId="rowRight3z">
+						<Label id="mc3zrowConnected" bindId="mc3zrowConnected" />
+						<Label id="mc3zrowLevel" bindId="mc3zrowLevel" />
+						<Label id="mc3zrowLastMist" bindId="mc3zrowLastMist" />
+					</View>
+				</View>
+			</ItemTemplate>
+			<ItemTemplate name="itememptylist" class="itemlist" bindId="itememptylist">
+				<View id="wrapper" bindId="wrapper">
+					<ImageView id="nodecolorempty" bindId="nodecolorempty" />
+					<View id="rowLeftempty" bindId="rowLeftempty">
+						<Label id="emptyrowVanityName" bindId="emptyrowVanityName" />
+						<Label id="emptyrowAddress1" bindId="emptyrowAddress1" />
+						<Label id="emptyrowAddress2" bindId="emptyrowAddress2" />
+					</View>
+<!--					
+					<View id="rowRight3z" bindId="rowRight3z">
+						<Label id="mc3zrowConnected" bindId="mc3zrowConnected" />
+						<Label id="mc3zrowLevel" bindId="mc3zrowLevel" />
+						<Label id="mc3zrowLastMist" bindId="mc3zrowLastMist" />
+					</View>
+-->					
+				</View>
+			</ItemTemplate>
+		</Templates>
+		<RefreshControl id="refreshControl" platform="ios" />
+		<Require type="view" src="footerView" id="footer"/>
+	</ListView>
+</Alloy>

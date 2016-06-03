@@ -1,0 +1,6 @@
+'.container': {
+	fullscreen: false,
+	exitOnClose: true,
+	backgroundColor: '#c2c2c2'
+},
+'#slideMenu': {}

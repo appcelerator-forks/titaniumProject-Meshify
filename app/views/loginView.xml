@@ -1,0 +1,13 @@
+<Alloy>
+	<View id="wrapper">
+		<TextField id="username" />
+		<TextField id="password" />
+		<View id="rememberWrapper">
+			<Switch id="basicSwitch" value="true" />
+			<Label id="rememberLabel" />
+		</View>
+		<Button id="loginButton" />
+		<Button id="forgotPassword" />
+	</View>
+</Alloy>
+

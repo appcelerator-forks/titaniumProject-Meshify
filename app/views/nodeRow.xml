@@ -1,0 +1,6 @@
+<Alloy>
+	<TableViewRow>
+		<Label top="70" left="0" text="{address-city}"/>
+	</TableViewRow>
+</Alloy>
+
